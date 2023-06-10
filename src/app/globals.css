@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --navigation-height: 48px;
+  }
+
+  html {
+    @apply bg-background font-sans text-white;
+    font-size: 62.5%;
+    scroll-behavior: smooth !important;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: #591ade 0 3px 12px;
+  }
+}
