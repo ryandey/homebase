@@ -29,7 +29,7 @@ export const Frameworks = ({ logoSize }: FrameworksProps) => (
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{
           duration: 0.8,
-          delay: 0.7,
+          delay: 0.1,
           ease: [0, 0.71, 0.2, 1.01],
         }}
       >

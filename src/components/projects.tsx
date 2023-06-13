@@ -1,6 +1,12 @@
 import { Project } from "./project"
 import { motion } from "framer-motion"
 
+import Jass from "@/assets/images/projects/jass.webp"
+import Radiata from "@/assets/images/projects/radiata.webp"
+import RyanDey from "@/assets/images/projects/ryandey.webp"
+import SavageLabs from "@/assets/images/projects/savagelabs-1.webp"
+import Dontra from "@/assets/images/projects/dontra.webp"
+
 export const Projects = () => {
   return (
     <section id="projects" className="text-center mb-[10rem]">
@@ -17,7 +23,7 @@ export const Projects = () => {
         Work
       </motion.h2>
 
-      <div className="grid grid-cols-1 gap-2 mt-8 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 mt-8 md:grid-cols-2 lg:grid-cols-3">
         {PROJECTS.map((project) => {
           return (
             <motion.div
@@ -35,6 +41,8 @@ export const Projects = () => {
                 description={project.description}
                 link={project.link}
                 source={project.source}
+                image={project.image}
+                imageAlt={project.imageAlt}
               />
             </motion.div>
           )
@@ -50,29 +58,39 @@ const PROJECTS = [
     description: "Company website",
     link: "https://jassatm.com/",
     source: "https://github.com/Radiata-Web/jass-atm",
+    image: Jass,
+    imageAlt: "jass atm logo",
   },
   {
     name: "Radiata Web",
     description: "Company website",
     link: "https://radiataweb.com/",
     source: "https://github.com/Radiata-Web/coming-soon",
+    image: Radiata,
+    imageAlt: "radiata logo",
   },
   {
     name: "Dontra CRM",
     description: "Capstone project",
-    link: "#",
+    link: "",
     source: "https://github.com/WebadriEP/LWVFL",
+    image: Dontra,
+    imageAlt: "dontra crm logo",
   },
   {
     name: "Ryan Dey",
     description: "Personal website",
     link: "https://ryandey.xyz",
     source: "",
+    image: RyanDey,
+    imageAlt: "ryan dey logo",
   },
   {
     name: "Savage Labs",
     description: "Company website",
     link: "https://savagelabs-web.vercel.app/",
     source: "https://github.com/ryandey/savagelabs-web",
+    image: SavageLabs,
+    imageAlt: "savage labs logo",
   },
 ]

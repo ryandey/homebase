@@ -18,7 +18,7 @@ export const HeroTitle = ({ children }: HeroElementProps) => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{
         duration: 0.8,
-        delay: 0.5,
+        delay: 0.1,
         ease: [0, 0.71, 0.2, 1.01],
       }}
     >
@@ -35,7 +35,7 @@ export const HeroSubtitle = ({ children }: HeroElementProps) => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{
         duration: 0.8,
-        delay: 0.6,
+        delay: 0.1,
         ease: [0, 0.71, 0.2, 1.01],
       }}
     >
@@ -45,5 +45,5 @@ export const HeroSubtitle = ({ children }: HeroElementProps) => {
 }
 
 export const Hero = ({ children }: HeroProps) => {
-  return <div className="text-center pt-10 pb-10">{children}</div>
+  return <div className="text-center pt-10 pb-10 my-xl">{children}</div>
 }

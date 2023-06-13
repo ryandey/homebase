@@ -24,6 +24,7 @@ module.exports = {
       "white-a08": "rgba(255, 255, 255, 0.08)",
       offwhite: "#e8e8e8",
       background: "#0D0A13",
+      "background-grad-second": "#0f081d",
       primary: "#591ADE",
       "primary-shadow": "#381792",
       primaryLight: "#8850FE",
@@ -45,6 +46,7 @@ module.exports = {
       10: "4.0rem",
       11: "4.4rem",
       12: "4.8rem",
+      xl: "10rem",
       "navigation-height": "var(--navigation-height)",
     },
     boxShadow: {
@@ -54,6 +56,21 @@ module.exports = {
       2: "repeat(2, minmax(0, 1fr))",
       3: "repeat(3, minmax(0, 1fr))",
       projectCard: "70% 30%",
+      accordionTrigger: "1fr 1fr",
+    },
+    keyframes: {
+      "accordion-down": {
+        from: { height: 0 },
+        to: { height: "var(--radix-accordion-content-height)" },
+      },
+      "accordion-up": {
+        from: { height: "var(--radix-accordion-content-height)" },
+        to: { height: 0 },
+      },
+    },
+    animation: {
+      "accordion-down": "accordion-down 0.2s ease-out",
+      "accordion-up": "accordion-up 0.2s ease-out",
     },
   },
   plugins: [],

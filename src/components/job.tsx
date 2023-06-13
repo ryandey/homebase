@@ -22,7 +22,7 @@ export const Job = ({
         </h3>
         <div className="flex flex-wrap gap-2 mb-4 md:mb-0">
           {skills.map((skill) => (
-            <div className="border border-white-a08 px-3 py-1 rounded-full bg-primary-shadow text-xs md:text-sm">
+            <div className="border border-white-a08 px-3 py-1 rounded-full bg-primary text-xs md:text-sm">
               {skill}
             </div>
           ))}

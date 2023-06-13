@@ -12,6 +12,10 @@
     font-size: 62.5%;
     scroll-behavior: smooth !important;
   }
+
+  body {
+    background: linear-gradient(to bottom, #0d0a13, #0f081d);
+  }
 }
 
 @layer utilities {
