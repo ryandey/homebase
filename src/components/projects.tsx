@@ -30,6 +30,7 @@ export const Projects = () => {
               className="text-2xl my-3 md:text-3xl"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{
                 duration: 0.8,
                 delay: 0.1,
@@ -48,6 +49,7 @@ export const Projects = () => {
           )
         })}
       </div>
+      <div id="experience"></div>
     </section>
   )
 }

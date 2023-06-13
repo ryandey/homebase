@@ -9,7 +9,7 @@ import {
 
 export const Experience = () => (
   <>
-    <section id="experience" className="text-center mb-[10rem]">
+    <section className="text-center mb-[10rem]">
       <motion.h2
         className="text-2xl leading-[6rem] pb-1 text-transparent bg-clip-text bg-gradient-to-br from-white to-grey-a038 my-3 md:text-3xl"
         initial={{ opacity: 0, y: 50 }}

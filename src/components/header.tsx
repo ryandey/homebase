@@ -12,7 +12,7 @@ export const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 left-0 w-full border-b border-white-a08 backdrop-blur-[12px]">
+    <header className="fixed top-0 left-0 z-50 w-full border-b border-white-a08 backdrop-blur-[12px]">
       <Container className="flex h-navigation-height">
         <Link href="/" className="flex items-center">
           <Logo className="w-[2.4rem] h-[2.4rem] mr-4" />
@@ -43,7 +43,7 @@ export const Header = () => {
                 <Link href="/">Home</Link>
               </li>
               <li>
-                <Link href="/#projects">Work</Link>
+                <Link href="/#work">Work</Link>
               </li>
               <li>
                 <Link href="/#experience">Experience</Link>

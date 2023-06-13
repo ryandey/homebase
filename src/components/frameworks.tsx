@@ -24,6 +24,7 @@ export const Frameworks = ({ logoSize }: FrameworksProps) => (
   <>
     <Container className="flex justify-center my-10 py-8">
       <motion.div
+        id="work"
         className="flex gap-12 flex-wrap justify-center"
         initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
