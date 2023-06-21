@@ -41,8 +41,8 @@ export const Experience = () => (
           {EXPERIENCE.map((exp) => {
             return (
               <AccordionItem
-                key={exp.company}
-                value={exp.company}
+                key={exp.id}
+                value={exp.id.toString()}
                 className="py-2 px-8"
               >
                 <AccordionTrigger>
@@ -73,9 +73,7 @@ export const Experience = () => (
                 </AccordionTrigger>
                 <AccordionContent className="text-start">
                   <ul>
-                    {exp.description.map((descItem) => (
-                      <li key={descItem[0]}>{descItem}</li>
-                    ))}
+                    <li>{exp.description}</li>
                   </ul>
                 </AccordionContent>
               </AccordionItem>
@@ -89,50 +87,58 @@ export const Experience = () => (
 
 const EXPERIENCE = [
   {
+    id: 1,
     company: "Florida Blue",
-    title: "Applications Developer Intern",
+    title: "UI/UX Development Intern III",
     startDate: "May 2023",
     endDate: "Present",
-    skills: ["React", "Node", "HTML/CSS"],
+    skills: ["UI/UX", "React.js", "Node.js", "MongoDB", "REST API"],
     description: [
-      "- Use React and Node.js to build front-end components for GuideWell Enterprise Data Services' Ingestion Framework.",
-      "- Collaborate with back-end team by integrating elegant and functional interfaces for new platform features according to the Agile methodology.",
+      "I build wireframes, prototype, and deliver reusable and thoughtfully designed React.js/TypeScript components for the Data Ingestion Platform. This involves collaboration with PMs, backend engineers and QA testers to match their functionality to a responsive front-end. I also write statements to fetch JSON or CSV data from multiple sources, including a REST API and MongoDB store.",
     ],
   },
   {
+    id: 2,
     company: "Radiata Web",
-    title: "Freelance Web Developer",
+    title: "Freelance Frontend/UX Engineer",
     startDate: "Apr. 2023",
     endDate: "Present",
-    skills: ["Next.js", "React", "AWS"],
+    skills: ["Next.js", "React.js", "TypeScript", "PostgreSQL", "Figma"],
     description: [
-      "- Conceptualize and develop beautiful and efficient websites for clients following a mobile-first strategy, with an emphasis on accessibility.",
-      "- Utilize JavaScript frameworks/libraries like Next.js and React.js to build full-stack web applications.",
-      "- Leverage PostgreSQL to handle databases for applications requiring data and information storage.",
-      "- Provide hosting services for built applications via Amazon Web Services (AWS Amplify & RDS).",
+      "I create accessible and elegant web experiences for small businesses to establish or enhance their online presence. I use React.js for the front-end and Next.js with PostgreSQL or MongoDB for full-stack applications requiring a database and REST API. All projects are built with TypeScript and self-hosted for clients, utilizing AWS and automated CI/CD environments.",
     ],
   },
   {
+    id: 3,
     company: "University of North Florida",
     title: "Webmaster",
     startDate: "Feb. 2022",
     endDate: "May 2023",
-    skills: ["HTML/CSS", "CMS"],
+    skills: ["UI/UX", "HTML5", "CSS3", "MongoDB", "Project Management"],
     description: [
-      "- Handled all website content updates and development, including data arrangement and content flow, across several business units.",
-      "- Supported each unit’s web presence by designing, conceptualizing, and assembling online content.",
-      "- Successfully redesigned and deployed the entire Undergraduate Studies department to Cascade CMS, building and optimizing 30+ legacy pages and merging excess information into sensible sections to minimize technical debt.",
+      "I managed the migration of 50+ individual pages across three departments to a new CMS platform, taking inspiration from the old content and rebuilding them new using modern HTML/CSS standards to meet ADA accessibility requirements. Data fetched from a mixture of MongoDB and PostgreSQL databases. I used Python scripts to automate tasks related to the file system and data manipulation.",
     ],
   },
   {
+    id: 4,
+    company: "University of North Florida",
+    title: "IT Technician",
+    startDate: "Jul. 2021",
+    endDate: "Feb. 2022",
+    skills: ["Python", "Adobe XD", "Windows Server", "Mac"],
+    description: [
+      "I collaborated with leadership to design effective materials for campus marketing, faculty initiatives, and video projects. Introduced automation to tasks related to word processing and equipment rentals using Python. I handled flashing operating systems and configuring Microsoft Active Directory on university devices.",
+    ],
+  },
+  {
+    id: 5,
     company: "Savage Labs",
     title: "Frontend Engineer",
     startDate: "Apr. 2019",
     endDate: "Jun. 2021",
-    skills: ["Next.js", "React"],
+    skills: ["UI/UX", "Next.js", "React.js", "Figma"],
     description: [
-      "- Employed React.js and Next.js to build a 10+ page software marketplace, which grew to 150+ registered users and supported over 5000 unique downloads.",
-      "- Built 30+ interface mockups in Figma for multiple web applications to drive user interaction and retention through accessible design.",
+      "I collaborated with backend engineers and directly with company leadership to build a 1st-party software marketplace using React.js and Next.js. I managed the implementation process end-to-end, starting with wireframes and prototypes in Figma, to the deployment through our automated CI/CD production environment.",
     ],
   },
 ]
