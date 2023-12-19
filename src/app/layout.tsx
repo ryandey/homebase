@@ -1,9 +1,14 @@
 import "./globals.css"
-import { Inter_Tight } from "next/font/google"
-import { Header } from "@/components/header"
+import { Inter_Tight as FontSans } from "next/font/google"
 import { Footer } from "@/components/footer"
+import { ThemeProvider } from "@/components/theme-provider"
 
-const interTight = Inter_Tight({ subsets: ["latin"] })
+import { cn } from "@/lib/utils"
+import { Header } from "@/components/header"
+
+export const fontSans = FontSans({
+  subsets: ["latin"],
+})
 
 export const metadata = {
   title: "Ryan Dey | Portfolio",
@@ -28,12 +33,22 @@ export default function RootLayout({
         <meta property="og:image:width" content="<generated>" />
         <meta property="og:image:height" content="<generated>" />
       </head>
-      <body className={interTight.className}>
-        <div>
+      <body
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased",
+          fontSans.className
+        )}
+      >
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
           <Header />
           <main className="pt-navigation-height">{children}</main>
           <Footer />
-        </div>
+        </ThemeProvider>
       </body>
     </html>
   )
