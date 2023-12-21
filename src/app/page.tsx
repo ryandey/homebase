@@ -13,7 +13,7 @@ export default function Home() {
         <Hero>
           <HeroTitle>Hey there, I'm Ryan</HeroTitle>
           <HeroSubtitle>
-            I am a UI/UX Engineer based out of Jacksonville, FL with{" "}
+            I am a JavaScript Developer based out of Richardson, TX with{" "}
             <br className="hidden md:block" />
             experience in several leading web technologies.
           </HeroSubtitle>
