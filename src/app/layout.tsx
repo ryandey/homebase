@@ -1,12 +1,12 @@
 import "./globals.css"
-import { Inter_Tight as FontSans } from "next/font/google"
+import { Inter_Tight } from "next/font/google"
 import { Footer } from "@/components/footer"
 import { ThemeProvider } from "@/components/theme-provider"
 
 import { cn } from "@/lib/utils"
 import { Header } from "@/components/header"
 
-export const fontSans = FontSans({
+export const fontSans = Inter_Tight({
   subsets: ["latin"],
 })
 
