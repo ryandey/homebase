@@ -9,7 +9,7 @@ export const Footer = () => (
         <Logo className="w-[2.4rem] h-[2.4rem] items-center" />
       </div>
       <div className="hidden md:flex items-center text-sm text-grey">
-        &copy; {new Date().getFullYear()} &#8212; Ryan Dey. All rights reserved.
+        &copy; {new Date().getFullYear()} &#8212; Ryan Dey
       </div>
       <div>
         <Socials className="flex" />
