@@ -7,15 +7,17 @@ function Hero() {
         <div className="flex flex-col items-start space-y-4 text-left">
           {/* Hero Text */}
           <div className="space-y-2">
-            <h1 className="text-primary text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+            <h1 className="text-primary text-6xl font-bold tracking-tighter dark:text-white">
               Ryan Dey
             </h1>
-            <p className="mx-auto md:text-xl">Web Engineer</p>
+            <p className="mx-auto text-lg md:text-xl text-gray-500 dark:text-gray-400">
+              Web Engineer
+            </p>
           </div>
 
           {/* Work Button */}
           <Link
-            href="#work"
+            href="/work"
             className="inline-flex h-9 items-center justify-center rounded-md border px-4 shadow-sm text-sm font-medium transition-colors hover:bg-gray-50 hover:text-gray-900"
           >
             See my work
