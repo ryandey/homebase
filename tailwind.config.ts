@@ -20,6 +20,8 @@ const config = {
     extend: {
       colors: {
         primary: "#1A1A32",
+        primaryDark: "#111121",
+        accent: "#6111d9",
       },
       keyframes: {
         "accordion-down": {
