@@ -10,8 +10,12 @@ function Navbar() {
       <div className="container flex h-14 max-w-screen-2xl items-center">
         {/* Logo */}
         <div className="mr-4 hidden sm:flex">
+          {/* Link Wrapper */}
           <Link href="/" className="mr-6 flex items-center space-x-3">
+            {/* Image */}
+
             <Logo />
+            {/* Name Text */}
             <span className="hidden font-bold sm:inline-block text-primary dark:text-gray-50">
               Ryan Dey
             </span>
@@ -40,7 +44,7 @@ function Navbar() {
           </Link>
         </nav>
 
-        {/* Right */}
+        {/* Right Side */}
         <div className="flex flex-1 justify-between space-x-2 md:justify-end">
           {/* Theme Toggler */}
           <ModeToggle />
