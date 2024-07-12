@@ -1,11 +1,11 @@
-import { Job } from "./job"
-import { motion } from "framer-motion"
+import { Job } from "./job";
+import { motion } from "framer-motion";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion"
+} from "@/components/ui/accordion";
 
 export const Experience = () => (
   <>
@@ -77,24 +77,24 @@ export const Experience = () => (
                   </ul>
                 </AccordionContent>
               </AccordionItem>
-            )
+            );
           })}
         </Accordion>
       </motion.div>
     </section>
   </>
-)
+);
 
 const EXPERIENCE = [
   {
     id: 1,
     company: "Florida Blue",
-    title: "UI/UX Development Intern III",
+    title: "Associate IT Developer",
     startDate: "May 2023",
     endDate: "Present",
     skills: ["UI/UX", "React.js", "Node.js", "MongoDB", "REST API"],
     description: [
-      "I build wireframes, prototype, and deliver reusable and thoughtfully designed React.js/TypeScript components for the Data Ingestion Platform. This involves collaboration with PMs, backend engineers and QA testers to match their functionality to a responsive front-end. I also write statements to fetch JSON or CSV data from multiple sources, including a REST API and MongoDB store.",
+      "I build wireframes, prototype, and deliver reusable and thoughtfully designed React.js/TypeScript components for the Data Ingestion Platform. This involves collaboration with PMs, backend engineers and QA testers to match their functionality to a responsive front-end. I also write statements to fetch JSON or CSV data from multiple sources, including a REST API and MongoDB store. Interned Summer 2023 and was hired full-time August 2023.",
     ],
   },
   {
@@ -141,4 +141,4 @@ const EXPERIENCE = [
       "I collaborated with backend engineers and directly with company leadership to build a 1st-party software marketplace using React.js and Next.js. I managed the implementation process end-to-end, starting with wireframes and prototypes in Figma, to the deployment through our automated CI/CD production environment.",
     ],
   },
-]
+];
