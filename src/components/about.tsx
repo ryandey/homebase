@@ -2,7 +2,7 @@ import { SocialGrid } from "./ui/social-grid";
 
 export const About = () => {
   return (
-    <div className="py-5">
+    <section className="py-5 mx-6 mb-5" id="aboutSection">
       <h2 className="text-3xl mb-3">About Me</h2>
       <p className="text-muted-foreground">
         I learned how to use HTML and CSS in my third grade technology class.
@@ -13,6 +13,6 @@ export const About = () => {
       </p>
 
       <SocialGrid />
-    </div>
+    </section>
   );
 };

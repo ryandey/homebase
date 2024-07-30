@@ -3,11 +3,9 @@ import Logo from "@/assets/logo.svg";
 import { Button } from "@/components/ui/button";
 
 export const Nav = () => {
-  const btnSize = 16;
-
   return (
     // Mobile Nav
-    <div className="h-20 px-6 py-2">
+    <div className="z-50 h-20 px-6 py-2 fixed top-0 w-full backdrop-blur-sm bg-background/50 border-b/75">
       <div className="flex items-center justify-between h-full">
         {/* Logo */}
         <a href="/">
