@@ -6,8 +6,8 @@
   :root {
     --background: #1a1b33;
     --foreground: #fbfaf8;
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: #242650;
+    --card-foreground: #fbfaf8;
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
     --primary: #fbfaf8;
@@ -19,7 +19,7 @@
     --accent: #474dd8;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
+    --border: #242650;
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
     --radius: 0.5rem;
