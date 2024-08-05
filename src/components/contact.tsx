@@ -1,4 +1,4 @@
-import { Briefcase, User } from "lucide-react";
+import { MoveRight } from "lucide-react";
 import { Button } from "./ui/button";
 
 export default function Contact() {
@@ -6,23 +6,12 @@ export default function Contact() {
     <section className="py-10 mx-6" id="contactSection">
       <h2 className="text-3xl mb-3">Contact Me</h2>
       <p className="text-muted-foreground mb-6">
-        For freelance-related queries, please use the "work with me" button
-        below. For other inquiries, please use the "inquiries" button.
+        Want to learn more about my projects, hire me, or get freelance work
+        done?
       </p>
-      <div className="flex gap-3 h-32">
-        <Button
-          variant="secondary"
-          className="flex-1 h-full flex-col gap-2 rounded-xl"
-        >
-          <Briefcase />
-          Work With Me
-        </Button>
-        <Button
-          variant="secondary"
-          className="flex-1 h-full flex-col gap-2 rounded-xl"
-        >
-          <User />
-          Inquiries
+      <div className="flex flex-col h-16 gap-3">
+        <Button className="flex-1 rounded-xl text-lg justify-between px-6">
+          Send me an email <MoveRight strokeWidth={1.5} className="ml-2" />
         </Button>
       </div>
     </section>
