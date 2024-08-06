@@ -8,7 +8,7 @@ export const Experience = () => {
       <h2 className="text-3xl mb-3">Experience</h2>
 
       {/* Jobs */}
-      <div className="mb-3">
+      <div className="mb-4">
         {JOB_LIST.map((job) => {
           return <Job key={job.title} job={job} />;
         })}
