@@ -1,9 +1,10 @@
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "./ui/button";
+import Logo from "@/assets/logo.svg";
 
 export default function Footer() {
   return (
-    <footer className="mx-6 pt-10">
+    <footer className="mx-6 py-10 space-y-8">
       <div className="flex flex-col h-64 gap-3">
         <Button
           variant="outline"
@@ -29,9 +30,16 @@ export default function Footer() {
       </div>
 
       {/* Copyright */}
-      <p className="text-center text-muted-foreground pt-8 pb-12">
+      <p className="text-center text-muted-foreground">
         &copy; 2024 Ryan Dey. All rights reserved.
       </p>
+
+      {/* Logo */}
+      <div className="flex justify-center align-middle">
+        <a href="/">
+          <img src={Logo} alt="Ryan Dey Logo" className="h-8" />
+        </a>
+      </div>
     </footer>
   );
 }
