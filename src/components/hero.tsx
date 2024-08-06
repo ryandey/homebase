@@ -11,7 +11,7 @@ export const Hero = () => {
           Dey
         </h1>
         <p className="text-muted-foreground text-xl mb-10">
-          Designer & Web Developer
+          Web Developer & UX Designer
         </p>
         <div className="flex flex-col h-16 gap-3">
           <Button className="flex-1 rounded-xl text-lg justify-between px-6">
