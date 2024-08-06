@@ -1,4 +1,4 @@
-import { MoveRight } from "lucide-react";
+import { SendHorizonal } from "lucide-react";
 import { Button } from "./ui/button";
 
 export default function Contact() {
@@ -11,7 +11,7 @@ export default function Contact() {
       </p>
       <div className="flex flex-col h-16 gap-3">
         <Button className="flex-1 rounded-xl text-lg justify-between px-6">
-          Send me an email <MoveRight strokeWidth={1.5} className="ml-2" />
+          Send me an email <SendHorizonal strokeWidth={1.5} className="ml-2" />
         </Button>
       </div>
     </section>
