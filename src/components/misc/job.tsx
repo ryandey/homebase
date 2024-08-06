@@ -19,7 +19,7 @@ export function Job(props: JobProps) {
     props.job;
 
   return (
-    <div className="py-3">
+    <div className="py-4">
       <ul>
         {/* Dates */}
         <li className="text-sm text-muted-foreground">
