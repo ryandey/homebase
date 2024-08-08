@@ -1,25 +1,13 @@
 import "./App.css";
-import { About } from "@/components/about";
-import { Hero } from "@/components/hero";
-import { Nav } from "@/components/ui/nav";
-import { Experience } from "@/components/experience";
-import { Work } from "@/components/work";
-import WorkCarousel from "@/components/misc/workCarousel";
-import Contact from "@/components/contact";
+import Nav from "./components/ui/nav";
 import Footer from "./components/footer";
+import Content from "./components/Content";
 
 function App() {
   return (
     <>
       <Nav />
-      <main>
-        <Hero />
-        <About />
-        <Experience />
-        <Work />
-        <WorkCarousel />
-        <Contact />
-      </main>
+      <Content />
       <Footer />
     </>
   );
