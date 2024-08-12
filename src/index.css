@@ -16,6 +16,7 @@
     --secondary-foreground: #fbfaf8;
     --muted: #242650;
     --muted-foreground: #b9bbe0;
+    --muted-background: #16183f;
     --accent: #474dd8;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -43,6 +44,20 @@
   button {
     font-family: "Dela Gothic One", sans-serif;
     text-transform: uppercase;
+  }
+
+  .email-btn {
+    font-family: "Dela Gothic One", sans-serif;
+    text-transform: uppercase;
+  }
+
+  body {
+    background: linear-gradient(
+      45deg,
+      var(--background),
+      var(--muted-background),
+      var(--background)
+    );
   }
 }
 
