@@ -1,18 +1,37 @@
-import { SocialGrid } from "./ui/social-grid";
-
 export const About = () => {
   return (
     <section className="py-5 mx-6 mb-5" id="aboutSection">
-      <h2 className="text-3xl mb-3">About Me</h2>
-      <p className="text-muted-foreground">
-        I learned how to use HTML and CSS in my third grade technology class.
-        From there, I fell in love with building websites that emphasize being a
-        pleasure to use. My experience with freelance graphic design from high
-        school showed me the importance of good design, which has been my
-        driving philosophy since.
+      <h2 className="text-3xl mb-6">About Me</h2>
+      <p className="text-muted-foreground mb-4">
+        I discovered my passion for web development through my early experiences
+        with HTML and CSS. My background in freelance graphic design has
+        instilled in me a deep appreciation for exceptional design. With a focus
+        on collaboration and innovation, I strive to create optimized web
+        solutions that meet clients’ needs.
       </p>
 
-      <SocialGrid />
+      {/* Skills */}
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+        {/* Primary skills */}
+        <div className="bg-muted border rounded-lg px-5 py-4 shadow-xl">
+          <h4 className="mb-2 capitalize">Specialized Skills</h4>
+          <ul className="text-muted-foreground">
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>Next.js</li>
+          </ul>
+        </div>
+
+        {/* Secondary skills */}
+        <div className="bg-muted border border-muted rounded-lg px-5 py-4 shadow-xl">
+          <h4 className="mb-2 capitalize">Additional Skills</h4>
+          <ul className="text-muted-foreground">
+            <li>TypeScript</li>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+          </ul>
+        </div>
+      </div>
     </section>
   );
 };
