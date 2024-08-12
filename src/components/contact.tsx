@@ -9,8 +9,8 @@ export default function Contact() {
         Want to learn more about my projects, hire me, or get freelance work
         done?
       </p>
-      <div className="flex flex-col h-16 gap-3">
-        <Button className="flex-1 rounded-xl text-lg justify-between px-6">
+      <div className="min-h-16">
+        <Button className="rounded-xl text-lg justify-between px-6 h-16 w-full sm:w-auto">
           Send me an email <SendHorizonal strokeWidth={1.5} className="ml-2" />
         </Button>
       </div>
