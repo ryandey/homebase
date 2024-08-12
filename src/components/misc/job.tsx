@@ -1,3 +1,4 @@
+import { ArrowUpRight } from "lucide-react";
 import { Badge } from "../ui/badge";
 
 export type JobModel = {
@@ -14,7 +15,7 @@ export interface JobProps {
   job: JobModel;
 }
 
-export function Job(props: JobProps) {
+export default function Job(props: JobProps) {
   const { company, title, started, ended, description, tags, website } =
     props.job;
 
@@ -28,7 +29,7 @@ export function Job(props: JobProps) {
 
         {/* Job title and Company */}
         <li className="font-heading mb-1">
-          <h3 className="capitalize">
+          <h3 className="capitalize inline">
             {title} &#183;{" "}
             <a href={website} target="_blank">
               {company}
@@ -37,7 +38,7 @@ export function Job(props: JobProps) {
         </li>
 
         {/* Description */}
-        <li className="text-sm text-muted-foreground mb-2">{description}</li>
+        <li className="text-muted-foreground mb-2">{description}</li>
 
         {/* Tags */}
         <li>

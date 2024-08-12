@@ -1,12 +1,12 @@
-import { Card, CardContent, CardTitle, CardHeader } from "../ui/card";
+import { Card, CardTitle, CardHeader } from "../ui/card";
 
-export type ProjectModel = {
+type ProjectModel = {
   title: string;
   previewUrl: string;
   projectUrl: string;
 };
 
-export interface ProjectProps {
+interface ProjectProps {
   project: ProjectModel;
 }
 
@@ -16,10 +16,10 @@ export function Project(props: ProjectProps) {
   return (
     <>
       <a href={projectUrl}>
-        <Card className="rounded-xl bg-card">
+        <Card className="rounded-lg bg-card">
           <img
             src={previewUrl}
-            className="h-60 w-full object-cover rounded-tl-xl rounded-tr-xl"
+            className="h-60 w-full object-cover rounded-tl-lg rounded-tr-lg"
           />
           <CardHeader>
             <CardTitle className="">{title}</CardTitle>
