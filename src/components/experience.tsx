@@ -1,4 +1,4 @@
-import { Job } from "@/components/misc/job";
+import Job from "@/components/misc/job";
 import { Button } from "./ui/button";
 import { MoveRight } from "lucide-react";
 
@@ -16,10 +16,14 @@ export const Experience = () => {
 
       {/* Full resume button */}
       <Button
-        variant="secondary"
-        className="flex-1 min-h-16 px-6 justify-between  rounded-xl"
+        variant="link"
+        className="group flex-1 min-h-16 justify-start pl-0 transition-all duration-300 hover:no-underline"
       >
-        See full resume <MoveRight strokeWidth={1.5} className="ml-2" />{" "}
+        See full resume{" "}
+        <MoveRight
+          strokeWidth={1.5}
+          className="ml-2 transition-all ease-in-out duration-200 group-hover:translate-x-3"
+        />{" "}
       </Button>
     </section>
   );
@@ -32,7 +36,7 @@ const JOB_LIST = [
     started: "May 2023",
     ended: "Present",
     description:
-      "Conceptualized and delivered optimized React.js solutions for data ingest applications, integrated databases with the backend using REST APIs, collaborated with project leads and UX engineers for rapid prototyping, and assisted in onboarding new team members.",
+      "Conceptualize and deliver React.js apps for data ingest platforms, including collaboration with project leads and UX engineers for rapid prototyping.",
     tags: ["JavaScript", "React.js", "Express.js", "PostgreSQL"],
     website: "https://floridablue.com",
   },
@@ -42,7 +46,7 @@ const JOB_LIST = [
     started: "Apr. 2023",
     ended: "Present",
     description:
-      "Guide clients through the process of wireframing, designing, and prototyping a bespoke web solution. Migrate and host solutions through AWS Amplify with automated CI/CD pipelines that support future iterations.",
+      "Guide clients through the process of building a bespoke web solution and provide hosting solutions through AWS with automated CI/CD pipelines that support future iterations.",
     tags: ["TypeScript", "React.js", "Next.js", "PostgreSQL"],
     website: "",
   },
@@ -52,8 +56,8 @@ const JOB_LIST = [
     started: "Feb. 2022",
     ended: "May 2023",
     description:
-      "Managed the migration of 50+ web pages across multiple departments to a modern CMS solution. Reconstructed each page to utilize modern web standards and to meet ADA accessibility requirements. Integrated databases with an SSO API to serve role-based content to users.",
+      "Migrated 50+ web pages to a modern CMS solution via rebuilding each page with  modern web standards and ADA accessibility. Integrated with an SSO API to serve role-based content to users.",
     tags: ["Cascade CMS", "HTML/CSS", "REST API"],
-    website: "https://floridablue.com",
+    website: "https://unf.edu",
   },
 ];
