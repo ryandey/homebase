@@ -3,16 +3,17 @@ import { About } from "./about";
 import { Experience } from "./experience";
 import { Work } from "./work";
 import Contact from "./contact";
+import Footer from "./footer";
 
 export default function Content() {
   return (
-    // mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0
     <main className="mx-auto min-h-screen max-w-screen-lg">
       <Hero />
       <About />
       <Experience />
       <Work />
       <Contact />
+      <Footer />
     </main>
   );
 }
