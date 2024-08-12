@@ -1,6 +1,6 @@
 export const About = () => {
   return (
-    <section className="py-5 mx-6 mb-5" id="aboutSection">
+    <section className="mx-6 my-10 py-5" id="aboutSection">
       <h2 className="text-3xl mb-6">About Me</h2>
       <p className="text-muted-foreground mb-4">
         I discovered my passion for web development through my early experiences

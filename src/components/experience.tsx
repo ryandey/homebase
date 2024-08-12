@@ -4,7 +4,7 @@ import { MoveRight } from "lucide-react";
 
 export const Experience = () => {
   return (
-    <section className="flex flex-col py-5 mx-6 mb-5" id="experienceSection">
+    <section className="flex flex-col my-10 mx-6 py-5" id="experienceSection">
       <h2 className="text-3xl mb-3">Experience</h2>
 
       {/* Jobs */}

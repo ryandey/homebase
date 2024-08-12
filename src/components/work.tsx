@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 
 export function Work() {
   return (
-    <section className="pt-10 mx-6" id="workSection">
+    <section className="mx-6 my-10 py-5" id="workSection">
       <h2 className="text-3xl mb-5">My Work</h2>
 
       <div className="grid gap-4 md:grid-cols-3 mb-4">
