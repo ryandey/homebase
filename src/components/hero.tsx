@@ -1,22 +1,46 @@
-import { Button } from "./ui/button";
-import { MoveRight } from "lucide-react";
+import { Linkedin, Github, Instagram } from "lucide-react";
 
 export const Hero = () => {
   return (
     <>
-      <section className="py-16 mt-12 mx-6">
+      <section className="py-16 mt-16 md:mt-28 lg:mt-32 mx-6 md:mb-5">
+        {/* Name */}
         <h1 className="text-7xl uppercase mb-5">
           Ryan
           <br />
           Dey
         </h1>
+
+        {/* Subtitle */}
         <p className="text-muted-foreground text-xl mb-10">
           Web Developer & UX Designer
         </p>
-        <div className="flex flex-col h-16 gap-3">
-          <Button className="flex-1 rounded-xl text-lg justify-between px-6">
-            See my work <MoveRight strokeWidth={1.5} className="ml-2" />
-          </Button>
+
+        {/* Socials */}
+        <div className="flex gap-3">
+          <a href="https://github.com/ryandey" target="_blank">
+            <Github
+              color="var(--muted-foreground)"
+              strokeWidth={1.5}
+              className="transition-all ease-in-out duration-300 hover:stroke-white"
+            />
+          </a>
+
+          <a href="https://www.linkedin.com/in/ryanpdey/" target="_blank">
+            <Linkedin
+              color="var(--muted-foreground)"
+              strokeWidth={1.5}
+              className="transition-all ease-in-out duration-300 hover:stroke-white"
+            />
+          </a>
+
+          <a href="https://www.instagram.com/ryanpdey/" target="_blank">
+            <Instagram
+              color="var(--muted-foreground)"
+              strokeWidth={1.5}
+              className="transition-all ease-in-out duration-300 hover:stroke-white"
+            />
+          </a>
         </div>
       </section>
     </>
