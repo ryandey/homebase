@@ -46,6 +46,11 @@
     text-transform: uppercase;
   }
 
+  .work-card-title {
+    font-family: "Dela Gothic One", sans-serif;
+    text-transform: capitalize;
+  }
+
   .email-btn {
     font-family: "Dela Gothic One", sans-serif;
     text-transform: uppercase;
