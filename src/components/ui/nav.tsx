@@ -16,7 +16,7 @@ export default function Nav() {
             <img src={Logo} alt="Ryan Dey Logo" className="h-6" />
           </a>
 
-          <ul className="flex gap-3">
+          <ul className="flex gap-5">
             {NAV_ITEMS.map((navItem) => (
               <li key={navItem.id}>
                 <Link
@@ -24,7 +24,7 @@ export default function Nav() {
                   smooth
                   duration={300}
                   offset={-100}
-                  className="hover:cursor-pointer"
+                  className="transition-all duration-300 hover:cursor-pointer hover:text-muted-foreground"
                 >
                   {navItem.title}
                 </Link>
