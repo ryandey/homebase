@@ -1,6 +1,4 @@
 import Job from "@/components/misc/job";
-import { Button } from "./ui/button";
-import { MoveRight } from "lucide-react";
 
 export const Experience = () => {
   return (
@@ -13,18 +11,6 @@ export const Experience = () => {
           return <Job key={job.title} job={job} />;
         })}
       </div>
-
-      {/* Full resume button */}
-      <Button
-        variant="link"
-        className="group flex-1 min-h-16 justify-start pl-0 transition-all duration-300 hover:no-underline"
-      >
-        See full résumé{" "}
-        <MoveRight
-          strokeWidth={1.5}
-          className="ml-2 transition-all ease-in-out duration-200 group-hover:translate-x-3"
-        />{" "}
-      </Button>
     </section>
   );
 };
