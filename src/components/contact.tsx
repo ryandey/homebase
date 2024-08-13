@@ -11,7 +11,7 @@ export default function Contact() {
       </p>
 
       <Button
-        className="email-btn rounded-xl text-lg justify-between px-6 h-16 w-full group transition-all duration-300 ease-in-out sm:w-auto hover:shadow-blue-950 hover:shadow-xl"
+        className="email-btn rounded-xl text-lg justify-between px-6 h-16 w-full group transition-all duration-300 ease-in-out sm:w-auto hover:shadow-muted hover:shadow-xl"
         asChild
       >
         <a href="mailto:hello@ryandey.xyz">
