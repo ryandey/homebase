@@ -16,7 +16,7 @@ export default function Nav() {
             <img src={Logo} alt="Ryan Dey Logo" className="h-6" />
           </a>
 
-          <ul className="flex gap-5">
+          <ul className="flex gap-3 sm:gap-5">
             {NAV_ITEMS.map((navItem) => (
               <li key={navItem.id}>
                 <Link
@@ -33,6 +33,7 @@ export default function Nav() {
           </ul>
         </nav>
       </div>
+
       {/* Progressive blur element */}
       <div className="gradient-blur md:max-h-24">
         <div></div>
