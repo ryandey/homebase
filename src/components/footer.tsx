@@ -1,44 +1,34 @@
-import { ArrowUpRight } from "lucide-react";
-import { Button } from "./ui/button";
+import { animateScroll as scroll } from "react-scroll";
 import Logo from "@/assets/logo.svg";
+import Socials from "./misc/socials";
 
 export default function Footer() {
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
-    <footer className="py-10 mx-6 space-y-8">
-      <div className="flex flex-col h-60 gap-3 sm:hidden">
-        <Button
-          variant="outline"
-          className="flex-1 h-full rounded-xl text-xl justify-between px-6"
-        >
-          LinkedIn
-          <ArrowUpRight />
-        </Button>
-        <Button
-          variant="outline"
-          className="flex-1 h-full rounded-xl text-xl justify-between px-6"
-        >
-          GitHub
-          <ArrowUpRight />
-        </Button>
-        <Button
-          variant="outline"
-          className="flex-1 h-full rounded-xl text-xl justify-between px-6"
-        >
-          Instagram
-          <ArrowUpRight />
-        </Button>
-      </div>
+    <footer className="py-8 mx-6 space-y-8">
+      <div className="grid grid-cols-1 items-center sm:grid-cols-3">
+        {/* Column 1 */}
+        <div className="flex flex-col gap-5 py-5 items-center sm:items-start">
+          <a onClick={scrollToTop} className="hover:cursor-pointer">
+            <img src={Logo} alt="Ryan Dey Logo" className="h-8" />
+          </a>
+        </div>
 
-      {/* Copyright */}
-      <p className="text-center text-muted-foreground sm:text-start">
-        &copy; 2024 Ryan Dey. All rights reserved.
-      </p>
+        {/* Column 2 */}
+        <div className="flex justify-center">
+          <Socials />
+        </div>
 
-      {/* Logo */}
-      <div className="flex justify-center align-middle sm:justify-start">
-        <a href="/">
-          <img src={Logo} alt="Ryan Dey Logo" className="h-8" />
-        </a>
+        {/* Column 3 */}
+        <div className="flex justify-center mt-8 py-2 sm:justify-end sm:mt-0">
+          {/* Copyright */}
+          <h5 className="text-sm text-center text-muted-foreground sm:text-start">
+            Built by Ryan Dey
+          </h5>
+        </div>
       </div>
     </footer>
   );
