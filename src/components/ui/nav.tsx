@@ -1,33 +1,54 @@
 import Logo from "@/assets/logo.svg";
-import MobileMenu from "./mobile-menu";
-import { useState } from "react";
-import { Twirl as Hamburger } from "hamburger-react";
+import "@/App.css";
 
 export default function Nav() {
-  const [isOpen, setIsOpen]: boolean = useState(false);
-
   return (
     <>
-      <div className="z-50 h-20 px-6 py-2 fixed top-0 w-full backdrop-blur-sm bg-background/50 border-b/50">
-        <div className="flex items-center justify-between h-full">
+      <div className="z-50 h-20 px-6 py-2 fixed top-0 w-full">
+        <nav className="z-50 flex items-center justify-between h-full">
           {/* Logo */}
           <a href="/">
             <img src={Logo} alt="Ryan Dey Logo" className="h-6" />
           </a>
 
-          {/* Menu Button */}
-          <Hamburger
-            toggled={isOpen}
-            size={25}
-            toggle={setIsOpen}
-            color="var(--foreground)"
-            easing="ease-in"
-            duration={0.3}
-            rounded
-          />
-        </div>
+          <ul className="flex gap-3">
+            {NAV_ITEMS.map((navItem) => (
+              <li key={navItem.id}>
+                <a href={navItem.url}>{navItem.title}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
       </div>
-      {isOpen && <MobileMenu open={isOpen} />}
+      {/* Progressive blur element */}
+      <div className="gradient-blur">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </>
   );
 }
+
+const NAV_ITEMS = [
+  {
+    id: 0,
+    title: "About",
+    url: "/#aboutSection",
+  },
+  {
+    id: 1,
+    title: "Experience",
+  },
+  {
+    id: 2,
+    title: "Work",
+  },
+  {
+    id: 3,
+    title: "Contact",
+  },
+];
