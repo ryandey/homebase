@@ -11,6 +11,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import Resume from "@/assets/Ryan_Dey_Resume_RDXYZ_Aug-2024.pdf";
 
 export default function Socials() {
   return (
@@ -71,7 +72,7 @@ export default function Socials() {
           {/* Resume */}
           <Tooltip>
             <TooltipTrigger>
-              <a href="https://www.instagram.com/ryanpdey/" target="_blank">
+              <a href={Resume} target="_blank">
                 <FileText
                   color="var(--muted-foreground)"
                   strokeWidth={1.5}
