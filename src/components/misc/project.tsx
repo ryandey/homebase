@@ -1,4 +1,5 @@
-import { Card, CardTitle, CardHeader } from "../ui/card";
+import { motion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
 
 type ProjectModel = {
   title: string;
@@ -14,18 +15,29 @@ export function Project(props: ProjectProps) {
   const { title, previewUrl, projectUrl } = props.project;
 
   return (
-    <>
-      <a href={projectUrl}>
-        <Card className="rounded-lg bg-card">
-          <img
-            src={previewUrl}
-            className="h-60 w-full object-cover rounded-tl-lg rounded-tr-lg"
-          />
-          <CardHeader>
-            <CardTitle className="">{title}</CardTitle>
-          </CardHeader>
-        </Card>
-      </a>
-    </>
+    <a href={projectUrl} target="_blank">
+      {/* Card */}
+      <motion.div
+        whileHover={{ scale: 1.1 }}
+        className={`p-4 rounded-lg bg-card backdrop-opacity-90 min-h-full transition-shadow duration-300 hover:shadow-xl bg-cover bg-center`}
+        style={{
+          backgroundImage: `url(${previewUrl})`,
+        }}
+      >
+        {/* Card container */}
+        <div className="min-h-48 flex flex-col justify-between">
+          {/* <img src={previewUrl} className="object-cover rounded-lg" /> */}
+
+          {/* Topside */}
+          <div className="flex flex-row justify-between items-center">
+            <p className="text-sm">2024</p>
+            <ArrowUpRight />
+          </div>
+
+          {/* Title */}
+          <p className="work-card-title text-xl">{title}</p>
+        </div>
+      </motion.div>
+    </a>
   );
 }
