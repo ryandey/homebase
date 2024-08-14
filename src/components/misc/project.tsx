@@ -19,13 +19,13 @@ export function Project(props: ProjectProps) {
       {/* Card */}
       <motion.div
         whileHover={{ scale: 1.1 }}
-        className={`p-4 rounded-lg bg-card backdrop-opacity-90 min-h-full transition-shadow duration-300 hover:shadow-xl bg-cover bg-center`}
+        className={`min-h-56 h-full rounded-lg transition-shadow duration-300 hover:shadow-xl bg-cover bg-center`}
         style={{
           backgroundImage: `url(${previewUrl})`,
         }}
       >
         {/* Card container */}
-        <div className="min-h-48 flex flex-col justify-between">
+        <div className="p-4 h-full flex flex-col justify-between">
           {/* <img src={previewUrl} className="object-cover rounded-lg" /> */}
 
           {/* Topside */}
