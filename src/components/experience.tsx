@@ -2,7 +2,7 @@ import Job from "@/components/misc/job";
 
 export const Experience = () => {
   return (
-    <section className="flex flex-col my-10 mx-6 py-5" id="experienceSection">
+    <section className="flex flex-col my-10 mx-6 py-5" id="experience">
       <h2 className="text-3xl mb-3">Experience</h2>
 
       {/* Jobs */}

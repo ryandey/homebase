@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 
 export default function Contact() {
   return (
-    <section className="py-10 mx-6 my-5" id="contactSection">
+    <section className="py-10 mx-6 my-5" id="contact-me">
       <h2 className="text-3xl mb-3">Contact Me</h2>
       <p className="text-muted-foreground text-xl mb-8">
         Want to learn more about my projects, hire me, or get freelance work
