@@ -3,7 +3,7 @@ import Logo from "@/assets/logo.svg";
 import "@/App.css";
 
 export default function Nav() {
-  const scrollWithOffset = (el) => {
+  const scrollWithOffset = (el: unknown) => {
     const yCoordinate = el.getBoundingClientRect().top + window.scrollY;
     const yOffset = -100;
     window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
@@ -39,7 +39,7 @@ export default function Nav() {
         </nav>
       </div>
 
-      {/* Progressive blur element */}
+      {/* Progressive blur element -- Created by /u/--silas-- */}
       <div className="gradient-blur md:max-h-24">
         <div></div>
         <div></div>
