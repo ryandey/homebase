@@ -1,10 +1,12 @@
-import { Link, animateScroll as scroll } from "react-scroll";
+import { HashLink, NavHashLink } from "react-router-hash-link";
 import Logo from "@/assets/logo.svg";
 import "@/App.css";
 
 export default function Nav() {
-  const scrollToTop = () => {
-    scroll.scrollToTop();
+  const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.scrollY;
+    const yOffset = -100;
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
   };
 
   return (
@@ -12,22 +14,25 @@ export default function Nav() {
       <div className="z-50 h-20 px-6 py-2 fixed top-0 w-full">
         <nav className="z-50 flex items-center justify-between h-full">
           {/* Logo */}
-          <a onClick={scrollToTop} className="hover:cursor-pointer">
+          <HashLink
+            to="/#"
+            scroll={scrollWithOffset}
+            className="hover:cursor-pointer"
+          >
             <img src={Logo} alt="Ryan Dey Logo" className="h-6" />
-          </a>
+          </HashLink>
 
+          {/* Links */}
           <ul className="flex gap-3 sm:gap-5">
             {NAV_ITEMS.map((navItem) => (
               <li key={navItem.id}>
-                <Link
-                  to={navItem.url}
-                  smooth
-                  duration={300}
-                  offset={-100}
+                <NavHashLink
+                  to={`/#${navItem.url}`}
                   className="transition-all duration-300 hover:cursor-pointer hover:text-muted-foreground"
+                  scroll={scrollWithOffset}
                 >
                   {navItem.title}
-                </Link>
+                </NavHashLink>
               </li>
             ))}
           </ul>
@@ -51,21 +56,21 @@ const NAV_ITEMS = [
   {
     id: 0,
     title: "About",
-    url: "aboutSection",
+    url: "about-me",
   },
   {
     id: 1,
     title: "Experience",
-    url: "experienceSection",
+    url: "experience",
   },
   {
     id: 2,
     title: "Work",
-    url: "workSection",
+    url: "my-work",
   },
   {
     id: 3,
     title: "Contact",
-    url: "contactSection",
+    url: "contact-me",
   },
 ];
