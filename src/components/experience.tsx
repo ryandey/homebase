@@ -1,4 +1,4 @@
-import Job from "@/components/misc/job";
+import Job from "../components/misc/job";
 
 export const Experience = () => {
   return (

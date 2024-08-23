@@ -10,7 +10,7 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/ui/tooltip";
+} from "../../components/ui/tooltip";
 import Resume from "@/assets/Ryan_Dey_Resume_RDXYZ_Aug-2024.pdf";
 
 export default function Socials() {

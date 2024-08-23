@@ -1,4 +1,3 @@
-import { Linkedin, Github, Instagram } from "lucide-react";
 import Logo from "@/assets/logo.svg";
 import Socials from "./misc/socials";
 
