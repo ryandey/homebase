@@ -1,15 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-
-type ProjectModel = {
-  title: string;
-  previewUrl: string;
-  projectUrl: string;
-};
-
-interface ProjectProps {
-  project: ProjectModel;
-}
+import { ProjectProps } from "@/types";
 
 export function Project(props: ProjectProps) {
   const { title, previewUrl, projectUrl } = props.project;
