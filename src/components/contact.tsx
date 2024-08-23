@@ -14,7 +14,7 @@ export default function Contact() {
         className="email-btn rounded-xl text-lg justify-between px-6 h-16 w-full group transition-all duration-300 ease-in-out sm:w-auto hover:shadow-muted hover:shadow-xl"
         asChild
       >
-        <a href="mailto:hello@ryandey.xyz">
+        <a href="mailto:hello@ryanpdey.com">
           Send me an email{" "}
           <SendHorizonal
             strokeWidth={2}
