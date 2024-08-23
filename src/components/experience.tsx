@@ -18,7 +18,7 @@ export const Experience = () => {
 const JOB_LIST = [
   {
     company: "Florida Blue",
-    title: "Assoc. IT Developer",
+    title: "Associate IT Developer",
     started: "May 2023",
     ended: "Present",
     description:
