@@ -28,7 +28,7 @@ export default function Nav() {
               <li key={navItem.id}>
                 <NavHashLink
                   to={`/#${navItem.url}`}
-                  className="transition-all duration-300 hover:cursor-pointer hover:text-muted-foreground"
+                  className="text-sm transition-all duration-300 hover:cursor-pointer hover:text-muted-foreground"
                   scroll={scrollWithOffset}
                 >
                   {navItem.title}
