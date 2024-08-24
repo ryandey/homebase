@@ -20,7 +20,7 @@ export const Experience = () => {
         className="flex flex-row gap-1 items-center group py-1"
       >
         <p className="text-sm text-muted-foreground transition-all ease-in-out duration-300 group-hover:text-white">
-          View full resume
+          View full résumé
         </p>
         <ArrowRightIcon
           size={18}
