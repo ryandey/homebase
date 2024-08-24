@@ -8,13 +8,11 @@ function App() {
   return (
     <>
       <Nav />
-      <main className="mx-auto mt-32 min-h-screen max-w-screen-lg">
-        <Routes>
-          {/* Main pages */}
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-        </Routes>
-      </main>
+      <Routes>
+        {/* Main pages */}
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+      </Routes>
     </>
   );
 }

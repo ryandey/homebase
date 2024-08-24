@@ -14,7 +14,7 @@ export function Project(props: ProjectModel) {
       {/* Card */}
       <motion.div
         whileHover={{ scale: 1.1 }}
-        className={`min-h-56 h-full rounded-lg transition-shadow duration-300 hover:shadow-xl bg-cover bg-center`}
+        className={`min-h-56 h-full rounded-lg transition-shadow duration-300 hover:shadow-xl bg-cover bg-center md:min-h-64`}
         style={{
           backgroundImage: `url(${previewUrl})`,
         }}
