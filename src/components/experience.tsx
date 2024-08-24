@@ -6,7 +6,7 @@ export const Experience = () => {
   return (
     <section className="flex flex-col my-10 mx-6 py-5" id="experience">
       <div className="flex justify-between items-center mb-5">
-        <h2 className="text-3xl">My Work</h2>
+        <h2 className="text-3xl">Experience</h2>
         <a
           href={Resume}
           target="_blank"
