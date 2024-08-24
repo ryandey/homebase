@@ -3,18 +3,21 @@
     "title": "Radiata Web",
     "year": "2024",
     "previewUrl": "https://i.imgur.com/1a2CmuY.jpeg",
-    "projectUrl": "https://www.radiataweb.com"
+    "projectUrl": "https://www.radiataweb.com",
+    "live": false
   },
   {
     "title": "Jass ATM",
     "year": "2023",
     "previewUrl": "https://i.imgur.com/1a2CmuY.jpeg",
-    "projectUrl": "https://www.jassatm.com"
+    "projectUrl": "https://www.jassatm.com",
+    "live": true
   },
   {
     "title": "Dontra CRM",
     "year": "2023",
     "previewUrl": "https://i.imgur.com/1a2CmuY.jpeg",
-    "projectUrl": "https://github.com/WebadriEP/LWVFL"
+    "projectUrl": "https://github.com/WebadriEP/LWVFL",
+    "live": true
   }
 ]
