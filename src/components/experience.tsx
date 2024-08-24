@@ -1,9 +1,28 @@
+import { ArrowRightIcon } from "lucide-react";
 import Job from "../components/misc/job";
+import Resume from "@/assets/Ryan_Dey_Resume_RDXYZ_Aug-2024.pdf";
 
 export const Experience = () => {
   return (
     <section className="flex flex-col my-10 mx-6 py-5" id="experience">
-      <h2 className="text-3xl mb-3">Experience</h2>
+      <div className="flex justify-between items-center mb-5">
+        <h2 className="text-3xl">My Work</h2>
+        <a
+          href={Resume}
+          target="_blank"
+          className="flex flex-row gap-1 items-center group"
+        >
+          <p className="text-sm text-muted-foreground transition-all ease-in-out duration-300 group-hover:text-white">
+            See full resume
+          </p>
+          <ArrowRightIcon
+            size={18}
+            color="var(--muted-foreground)"
+            strokeWidth={1.5}
+            className="transition-all ease-in-out duration-300 group-hover:stroke-white"
+          />
+        </a>
+      </div>
 
       {/* Jobs */}
       <div className="mb-4">
