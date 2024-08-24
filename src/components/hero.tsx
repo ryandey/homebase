@@ -1,49 +1,37 @@
-"use client"
+import Logo from "@/assets/logo.svg";
+import Socials from "./misc/socials";
 
-import { motion } from "framer-motion"
-
-interface HeroProps {
-  children: React.ReactNode
-}
-
-interface HeroElementProps {
-  children: React.ReactNode
-}
-
-export const HeroTitle = ({ children }: HeroElementProps) => {
+export const Hero = () => {
   return (
-    <motion.h1
-      className="text-3xl leading-[6rem] pb-2 text-transparent bg-clip-text bg-gradient-to-br from-white to-grey-a038 my-6 md:text-5xl"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{
-        duration: 0.8,
-        delay: 0.1,
-        ease: [0, 0.71, 0.2, 1.01],
-      }}
-    >
-      {children}
-    </motion.h1>
-  )
-}
+    <>
+      <section className="py-16 mt-16 mx-6 grid sm:grid-cols-2 md:mt-28 lg:mt-32 md:mb-5">
+        {/* Text column */}
+        <div>
+          {/* Name */}
+          <h1 className="text-7xl uppercase mb-5">
+            Ryan
+            <br />
+            Dey
+          </h1>
 
-export const HeroSubtitle = ({ children }: HeroElementProps) => {
-  return (
-    <motion.p
-      className="text-md my-6 mb-12 md:text-lg"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{
-        duration: 0.8,
-        delay: 0.1,
-        ease: [0, 0.71, 0.2, 1.01],
-      }}
-    >
-      {children}
-    </motion.p>
-  )
-}
+          {/* Subtitle */}
+          <p className="text-muted-foreground text-xl mb-10">
+            Web Developer & UX Designer
+          </p>
 
-export const Hero = ({ children }: HeroProps) => {
-  return <div className="text-center pt-10 pb-10 my-xl">{children}</div>
-}
+          <Socials />
+        </div>
+
+        {/* Logo column */}
+        <div className="hidden sm:flex justify-end">
+          <img
+            src={Logo}
+            alt="Ryan Dey logo"
+            width={400}
+            className="hidden sm:block sm:max-h-lg"
+          />
+        </div>
+      </section>
+    </>
+  );
+};

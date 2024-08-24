@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Radiata Web",
+    "subtitle": "Coming soon",
+    "year": "2024",
+    "previewUrl": "https://raw.githubusercontent.com/ryandey/homebase/master/src/assets/images/projects/radiata.webp",
+    "projectUrl": "https://www.radiataweb.com",
+    "live": false
+  },
+  {
+    "title": "Jass ATM",
+    "subtitle": "Website",
+    "year": "2023",
+    "previewUrl": "https://raw.githubusercontent.com/ryandey/homebase/master/src/assets/images/projects/jass.webp",
+    "projectUrl": "https://www.jassatm.com",
+    "live": true
+  },
+  {
+    "title": "Dontra CRM",
+    "subtitle": "Project",
+    "year": "2023",
+    "previewUrl": "https://raw.githubusercontent.com/ryandey/homebase/master/src/assets/images/projects/dontra.webp",
+    "projectUrl": "https://github.com/WebadriEP/LWVFL",
+    "live": true
+  }
+]

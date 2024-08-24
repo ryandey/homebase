@@ -1,19 +1,35 @@
-import { Logo } from "@/assets/icons/logo"
-import { Container } from "./ui/container"
-import { Socials } from "./socials"
+import { animateScroll as scroll } from "react-scroll";
+import Logo from "@/assets/logo.svg";
+import Socials from "./misc/socials";
 
-export const Footer = () => (
-  <footer className="border-t border-white-a08 py-[5.6rem] mt-12 text-sm">
-    <Container className="flex justify-between">
-      <div className="flex items-center gap-2 text-xs text-offwhite">
-        <Logo className="w-[2.4rem] h-[2.4rem] items-center" />
+export default function Footer() {
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
+  return (
+    <footer className="py-8 mx-6 space-y-8">
+      <div className="grid grid-cols-1 items-center sm:grid-cols-3">
+        {/* Column 1 */}
+        <div className="flex flex-col gap-5 py-5 items-center sm:items-start">
+          <a onClick={scrollToTop} className="hover:cursor-pointer">
+            <img src={Logo} alt="Ryan Dey Logo" className="h-8" />
+          </a>
+        </div>
+
+        {/* Column 2 */}
+        <div className="flex justify-center">
+          <Socials />
+        </div>
+
+        {/* Column 3 */}
+        <div className="flex justify-center mt-8 py-2 sm:justify-end sm:mt-0">
+          {/* Copyright */}
+          <h5 className="text-sm text-center text-muted-foreground sm:text-start">
+            Built by Ryan Dey
+          </h5>
+        </div>
       </div>
-      <div className="hidden md:flex items-center text-sm text-grey">
-        &copy; {new Date().getFullYear()} &#8212; Ryan Dey
-      </div>
-      <div>
-        <Socials className="flex" />
-      </div>
-    </Container>
-  </footer>
-)
+    </footer>
+  );
+}
