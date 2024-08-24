@@ -7,7 +7,7 @@ interface ProjectModel {
 }
 
 export function Project(props: ProjectModel) {
-  const { title, previewUrl, projectUrl } = props.project;
+  const { title, year, previewUrl, projectUrl } = props.project;
 
   return (
     <a href={projectUrl} target="_blank">
@@ -25,7 +25,7 @@ export function Project(props: ProjectModel) {
 
           {/* Topside */}
           <div className="flex flex-row justify-between items-center">
-            <p className="text-sm">2024</p>
+            <p className="text-sm">{year}</p>
             <ArrowUpRight />
           </div>
 
