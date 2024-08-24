@@ -3,7 +3,7 @@
     "title": "Radiata Web",
     "subtitle": "Coming soon",
     "year": "2024",
-    "previewUrl": "https://res.cloudinary.com/dqg4s4jup/image/upload/f_auto,q_auto/ipgx4witozifz2ejdcsv",
+    "previewUrl": "https://raw.githubusercontent.com/ryandey/homebase/master/src/assets/radiata.webp",
     "projectUrl": "https://www.radiataweb.com",
     "live": false
   },
@@ -11,7 +11,7 @@
     "title": "Jass ATM",
     "subtitle": "Website",
     "year": "2023",
-    "previewUrl": "https://res.cloudinary.com/dqg4s4jup/image/upload/f_auto,q_auto/wyskxe7szkmwb17ayzcj",
+    "previewUrl": "https://raw.githubusercontent.com/ryandey/homebase/master/src/assets/jass.webp",
     "projectUrl": "https://www.jassatm.com",
     "live": true
   },
@@ -19,7 +19,7 @@
     "title": "Dontra CRM",
     "subtitle": "Project",
     "year": "2023",
-    "previewUrl": "https://res.cloudinary.com/dqg4s4jup/image/upload/f_auto,q_auto/xhv4xuth3vaggqp3wgbb",
+    "previewUrl": "https://raw.githubusercontent.com/ryandey/homebase/master/src/assets/dontra.webp",
     "projectUrl": "https://github.com/WebadriEP/LWVFL",
     "live": true
   }
