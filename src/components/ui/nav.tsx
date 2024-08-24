@@ -3,7 +3,7 @@ import Logo from "@/assets/logo.svg";
 import "@/App.css";
 
 export default function Nav() {
-  const scrollWithOffset = (el: unknown) => {
+  const scrollWithOffset = (el: HTMLElement) => {
     const yCoordinate = el.getBoundingClientRect().top + window.scrollY;
     const yOffset = -100;
     window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
