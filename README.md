@@ -1,30 +1,29 @@
-# React + TypeScript + Vite
+# Welcome to Homebase
+Homebase is what I consider my personal hub. It's a display of my identity, what I've accomplished, and the work I've created.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Macbook pro displaying a preview of the website](https://i.imgur.com/crxhjPl.jpeg)
 
-Currently, two official plugins are available:
+## The Stack
+I wanted to keep Homebase as simple but iterable as possible. Of course, I had to use the technology that I'm most familiar with for my portfolio, so I chose React. The rest is easy:
+* TypeScript
+* Vite.js
+* React
+* Tailwind CSS
+* Shadcn/ui
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+In opposition to my statement about the stuff I'm most familiar with, I decided to utilize TypeScript for this project because it was a good, easy way to ease into learning it. This is the first major project I've used TypeScript in its entirety for, so I wanted to start out simple.
 
-## Expanding the ESLint configuration
+## Run it Yourself
+Of course, in the spirit of this project being open-source and public on GitHub, here's the installation instructions after cloning the repository:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+First, install the dependencies:
+```
+yarn
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Then run the app:
+```
+yarn run dev
+```
+
+I love simplicity. That's all I have to say about this project for now, so please go check it out! Thank you for reading!
