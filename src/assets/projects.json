@@ -1,26 +1,37 @@
 [
   {
     "title": "Radiata Web",
-    "subtitle": "Coming soon",
     "year": "2024",
-    "previewUrl": "https://raw.githubusercontent.com/ryandey/homebase/master/src/assets/radiata.webp",
-    "projectUrl": "https://www.radiataweb.com",
-    "live": false
+    "previewUrl": "/previews/radiata.png",
+    "projectUrl": "https://radiataweb.netlify.app/",
+    "live": true
   },
   {
     "title": "Jass ATM",
-    "subtitle": "Website",
     "year": "2023",
-    "previewUrl": "https://raw.githubusercontent.com/ryandey/homebase/master/src/assets/jass.webp",
+    "previewUrl": "/previews/jass.png",
     "projectUrl": "https://www.jassatm.com",
     "live": true
   },
   {
-    "title": "Dontra CRM",
-    "subtitle": "Project",
+    "title": "Portfolio V1",
     "year": "2023",
-    "previewUrl": "https://raw.githubusercontent.com/ryandey/homebase/master/src/assets/dontra.webp",
+    "previewUrl": "/previews/portfolio.png",
+    "projectUrl": "https://www.ryandey.xyz",
+    "live": true
+  },
+  {
+    "title": "Dontra CRM",
+    "year": "2023",
+    "previewUrl": "/previews/dontra.png",
     "projectUrl": "https://github.com/WebadriEP/LWVFL",
+    "live": true
+  },
+  {
+    "title": "Savage Labs",
+    "year": "2022",
+    "previewUrl": "/previews/savage.png",
+    "projectUrl": "https://savagelabs-web.vercel.app/",
     "live": true
   }
 ]
