@@ -51,7 +51,7 @@ const JOB_LIST = [
     description:
       "Guide clients through the process of building a bespoke web solution and provide hosting solutions through AWS with automated CI/CD pipelines that support future iterations.",
     tags: ["TypeScript", "React.js", "Next.js", "PostgreSQL"],
-    website: "",
+    website: "https://radiataweb.netlify.app/",
   },
   {
     company: "University of North Florida",
