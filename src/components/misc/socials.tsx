@@ -4,14 +4,13 @@ import {
   Instagram,
   FileText,
   ExternalLink,
-} from "lucide-react";
+} from "lucide-react"
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "../../components/ui/tooltip";
-import Resume from "@/assets/Ryan_Dey_Resume_RDXYZ_Aug-2024.pdf";
+} from "../../components/ui/tooltip"
 
 export default function Socials() {
   return (
@@ -72,7 +71,7 @@ export default function Socials() {
           {/* Resume */}
           <Tooltip>
             <TooltipTrigger>
-              <a href={Resume} target="_blank">
+              <a href="/Ryan_Dey_Resume_RDXYZ_Aug-2024.pdf" target="_blank">
                 <FileText
                   color="var(--muted-foreground)"
                   strokeWidth={1.5}
@@ -88,5 +87,5 @@ export default function Socials() {
         </div>
       </TooltipProvider>
     </>
-  );
+  )
 }

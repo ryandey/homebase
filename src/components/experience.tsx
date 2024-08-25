@@ -1,21 +1,20 @@
-import { ArrowRightIcon } from "lucide-react";
-import Job from "../components/misc/job";
-import Resume from "@/assets/Ryan_Dey_Resume_RDXYZ_Aug-2024.pdf";
+import { ArrowRightIcon } from "lucide-react"
+import Job from "../components/misc/job"
 
 export const Experience = () => {
   return (
-    <section className="flex flex-col my-10 mx-6 py-5" id="experience">
+    <section className="flex flex-col my-10 py-5" id="experience">
       <h2 className="text-3xl">Experience</h2>
 
       {/* Jobs */}
       <div className="mb-4">
         {JOB_LIST.map((job) => {
-          return <Job key={job.title} job={job} />;
+          return <Job key={job.title} job={job} />
         })}
       </div>
 
       <a
-        href={Resume}
+        href="/Ryan_Dey_Resume_RDXYZ_Aug-2024.pdf"
         target="_blank"
         className="flex flex-row gap-1 items-center group py-1"
       >
@@ -30,8 +29,8 @@ export const Experience = () => {
         />
       </a>
     </section>
-  );
-};
+  )
+}
 
 const JOB_LIST = [
   {
@@ -64,4 +63,4 @@ const JOB_LIST = [
     tags: ["Cascade CMS", "HTML/CSS", "REST API"],
     website: "https://unf.edu",
   },
-];
+]
