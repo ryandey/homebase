@@ -1,14 +1,14 @@
-import { animateScroll as scroll } from "react-scroll";
-import Logo from "@/assets/logo.svg";
-import Socials from "./misc/socials";
+import { animateScroll as scroll } from "react-scroll"
+import Logo from "@/assets/logo.svg"
+import Socials from "./misc/socials"
 
 export default function Footer() {
   const scrollToTop = () => {
-    scroll.scrollToTop();
-  };
+    scroll.scrollToTop()
+  }
 
   return (
-    <footer className="py-8 mx-6 space-y-8">
+    <footer className="py-8 mx-auto px-6 space-y-8 max-w-screen-lg">
       <div className="grid grid-cols-1 items-center sm:grid-cols-3">
         {/* Column 1 */}
         <div className="flex flex-col gap-5 py-5 items-center sm:items-start">
@@ -31,5 +31,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  );
+  )
 }

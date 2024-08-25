@@ -1,10 +1,10 @@
-import Logo from "@/assets/logo.svg";
-import Socials from "./misc/socials";
+import Logo from "@/assets/logo.svg"
+import Socials from "./misc/socials"
 
 export const Hero = () => {
   return (
     <>
-      <section className="py-16 mt-16 mx-6 grid sm:grid-cols-2 md:mt-28 lg:mt-32 md:mb-5">
+      <section className="py-16 mt-16 grid sm:grid-cols-2 md:mt-28 lg:mt-32 md:mb-5">
         {/* Text column */}
         <div>
           {/* Name */}
@@ -33,5 +33,5 @@ export const Hero = () => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}

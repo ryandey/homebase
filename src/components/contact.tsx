@@ -1,9 +1,9 @@
-import { SendHorizonal } from "lucide-react";
-import { Button } from "./ui/button";
+import { SendHorizonal } from "lucide-react"
+import { Button } from "./ui/button"
 
 export default function Contact() {
   return (
-    <section className="py-10 mx-6 my-5" id="contact-me">
+    <section className="py-10 my-5" id="contact-me">
       <h2 className="text-3xl mb-3">Contact Me</h2>
       <p className="text-muted-foreground text-xl mb-8">
         Want to learn more about my projects, hire me, or get freelance work
@@ -23,5 +23,5 @@ export default function Contact() {
         </a>
       </Button>
     </section>
-  );
+  )
 }
