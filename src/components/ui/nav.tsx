@@ -1,6 +1,7 @@
 import { HashLink, NavHashLink } from "react-router-hash-link";
 import Logo from "@/assets/logo.svg";
 import "@/App.css";
+import Socials from "../misc/socials";
 
 export default function Nav() {
   const scrollWithOffset = (el: HTMLElement) => {
@@ -12,7 +13,7 @@ export default function Nav() {
   return (
     <>
       <div className="z-50 h-20 px-6 py-2 fixed top-0 w-full">
-        <nav className="z-50 flex items-center justify-between h-full">
+        <nav className="z-50 h-full grid grid-cols-3 items-center mx-auto">
           {/* Logo */}
           <HashLink
             to="/#"
@@ -23,7 +24,7 @@ export default function Nav() {
           </HashLink>
 
           {/* Links */}
-          <ul className="flex gap-3 sm:gap-5">
+          <ul className="flex justify-center gap-3 sm:gap-5">
             {NAV_ITEMS.map((navItem) => (
               <li key={navItem.id}>
                 <NavHashLink
@@ -36,6 +37,11 @@ export default function Nav() {
               </li>
             ))}
           </ul>
+
+          {/* CTA */}
+          <div className="hidden justify-end md:flex">
+            <Socials />
+          </div>
         </nav>
       </div>
 
