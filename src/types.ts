@@ -1,7 +1,8 @@
 export type ProjectProps = {
-  title: string
-  year: string
-  previewUrl: string
-  projectUrl: string
-  live: boolean
-}
+  title: string;
+  previewUrl: string;
+  projectUrl: string;
+  live: boolean;
+  description: string;
+  tags: string[];
+};

@@ -1,37 +1,34 @@
 [
   {
     "title": "Radiata Web",
-    "year": "2024",
-    "previewUrl": "/previews/radiata.png",
+    "previewUrl": "/previews/radiata-web.png",
     "projectUrl": "https://radiataweb.netlify.app/",
-    "live": true
+    "live": true,
+    "description": "Webpage for my own web design company",
+    "tags": ["TypeScript", "Next.js", "React", "Tailwind CSS", "Shadcn-UI"]
+  },
+  {
+    "title": "Castle Hills Stain & Restoration",
+    "previewUrl": "/previews/castle-hills.png",
+    "projectUrl": "https://chstainandrestoration.com/",
+    "live": true,
+    "description": "Website for a fence and gate contractor in Carrollton, TX",
+    "tags": ["TypeScript", "Next.js", "React", "Tailwind CSS", "Shadcn-UI"]
   },
   {
     "title": "Jass ATM",
-    "year": "2023",
-    "previewUrl": "/previews/jass.png",
+    "previewUrl": "/previews/jass-atm.png",
     "projectUrl": "https://www.jassatm.com",
-    "live": true
-  },
-  {
-    "title": "Portfolio V1",
-    "year": "2023",
-    "previewUrl": "/previews/portfolio.png",
-    "projectUrl": "https://www.ryandey.xyz",
-    "live": true
+    "live": true,
+    "description": "Website for an ATM sales, service, and repair company based in Jacksonville, FL",
+    "tags": ["TypeScript", "React", "Next.js", "Tailwind CSS"]
   },
   {
     "title": "Dontra CRM",
-    "year": "2023",
-    "previewUrl": "/previews/dontra.png",
+    "previewUrl": "/previews/dontra-crm.png",
     "projectUrl": "https://github.com/WebadriEP/LWVFL",
-    "live": true
-  },
-  {
-    "title": "Savage Labs",
-    "year": "2022",
-    "previewUrl": "/previews/savage.png",
-    "projectUrl": "https://savagelabs-web.vercel.app/",
-    "live": true
+    "live": true,
+    "description": "Custom CRM for a non-profit organization",
+    "tags": ["JavaScript", "React", "Express", "MongoDB", "Chakra UI"]
   }
 ]
