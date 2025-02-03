@@ -1,10 +1,11 @@
-import Logo from "@/assets/logo.svg"
-import Socials from "./misc/socials"
+import Logo from "@/assets/logo.svg";
+import { Button } from "./ui/button";
+import { SendHorizonal } from "lucide-react";
 
 export const Hero = () => {
   return (
     <>
-      <section className="py-16 mt-16 grid sm:grid-cols-2 md:mt-28 lg:mt-32 md:mb-5">
+      <section className="py-16 mt-16 grid gap-8 sm:grid-cols-2 md:mt-28 lg:mt-32 md:mb-5">
         {/* Text column */}
         <div>
           {/* Name */}
@@ -16,10 +17,24 @@ export const Hero = () => {
 
           {/* Subtitle */}
           <p className="text-muted-foreground text-xl mb-10">
-            Web Developer & UX Designer
+            Software Developer based in Richardson, TX
           </p>
 
-          <Socials />
+          <div className="flex gap-12 space-between">
+            {/* CTA */}
+            <Button
+              className="email-btn rounded-xl justify-between px-6 h-12 group transition-all duration-300 ease-in-out sm:w-auto hover:shadow-muted hover:shadow-xl"
+              asChild
+            >
+              <a href="mailto:hello@ryanpdey.com">
+                Email me{" "}
+                <SendHorizonal
+                  strokeWidth={2}
+                  className="ml-2 transition-all duration-300 ease-in-out group-hover:translate-x-1.5"
+                />
+              </a>
+            </Button>
+          </div>
         </div>
 
         {/* Logo column */}
@@ -33,5 +48,5 @@ export const Hero = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
