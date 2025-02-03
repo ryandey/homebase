@@ -4,13 +4,13 @@ import {
   Instagram,
   FileText,
   ExternalLink,
-} from "lucide-react"
+} from "lucide-react";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "../../components/ui/tooltip"
+} from "../../components/ui/tooltip";
 
 export default function Socials() {
   return (
@@ -87,5 +87,5 @@ export default function Socials() {
         </div>
       </TooltipProvider>
     </>
-  )
+  );
 }
