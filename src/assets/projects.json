@@ -28,7 +28,7 @@
     "previewUrl": "/previews/dontra-crm.png",
     "projectUrl": "https://github.com/WebadriEP/LWVFL",
     "live": true,
-    "description": "Custom CRM for a non-profit organization",
+    "description": "Custom CRM built on the MERN stack for the League of Women Voters of Florida in partnership with the University of North Florida School of Computing",
     "tags": ["JavaScript", "React", "Express", "MongoDB", "Chakra UI"]
   }
 ]
