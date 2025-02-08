@@ -24,7 +24,7 @@ export default function Nav() {
           </HashLink>
 
           {/* Links */}
-          <ul className="flex justify-center gap-3 sm:gap-5">
+          <ul className="flex col-span-2 justify-end gap-3 sm:gap-5 md:justify-center md:col-span-1">
             {NAV_ITEMS.map((navItem) => (
               <li key={navItem.id}>
                 <NavHashLink
