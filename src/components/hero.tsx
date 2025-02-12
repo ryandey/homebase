@@ -17,7 +17,7 @@ export const Hero = () => {
 
           {/* Subtitle */}
           <p className="text-muted-foreground text-xl mb-10">
-            Software Developer based in Richardson, TX
+            Software Engineer based in Richardson, TX
           </p>
 
           <div className="flex gap-12 space-between">
