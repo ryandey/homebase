@@ -37,7 +37,7 @@ const navItems = [
 
 export default function Navbar() {
   return (
-    <div className="w-full border-b border-input h-16">
+    <div className="fixed top-0 w-full bg-background/50 backdrop-blur-xl border-b border-input h-14 hidden lg:block">
       <div className="flex flex-row justify-between items-center h-full">
         <Link
           href="/"
