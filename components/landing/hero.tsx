@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section className="py-32 px-4 border-b border-input bg-[linear-gradient(to_right,#2b283312_1px,transparent_1px),linear-gradient(to_bottom,#2b283312_1px,transparent_1px)] bg-[size:24px_24px]">
+    <section className="py-32 px-4 border-b border-input bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] dark:bg-[radial-gradient(#181e2b_1px,transparent_1px)] [background-size:16px_16px]">
       <div className="h-full flex flex-col items-center justify-center text-center space-y-8">
         <h1 className="text-6xl md:text-7xl lg:text-8xl">
           Nice to meet you,
