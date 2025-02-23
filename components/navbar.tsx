@@ -44,7 +44,20 @@ export default function Navbar() {
           passHref
           className="flex flex-row items-center gap-3 pl-6 pr-20 border-r border-input h-full hover:bg-accent transition-all"
         >
-          <Logo />
+          <Image
+            src="/logos/logo-light.svg"
+            alt="Ryan Dey's logo"
+            width={30}
+            height={30}
+            className="hidden dark:block"
+          />
+          <Image
+            src="/logos/logo-dark.svg"
+            alt="Ryan Dey's logo"
+            width={30}
+            height={30}
+            className="block dark:hidden"
+          />
           <p>Ryan Dey</p>
         </Link>
         <div className="flex flex-row items-center">
@@ -59,7 +72,7 @@ export default function Navbar() {
               ))}
             </NavigationMenuList>
           </NavigationMenu>
-          <Button variant="ghost" size="icon" className="border-r-none">
+          <Button variant="ghost" size="icon" className="border-x border-input">
             <Linkedin />
           </Button>
           <ThemeToggle />
