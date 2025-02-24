@@ -115,11 +115,7 @@ export function MobileNavbar() {
               <SheetHeader className="border-b border-input">
                 <SheetTitle className="flex items-center justify-between">
                   {/* Logo and Workmark */}
-                  <Link
-                    href="/"
-                    passHref
-                    className="flex flex-row items-center gap-3 pl-6 pr-8"
-                  >
+                  <div className="flex flex-row items-center gap-3 pl-6 pr-8">
                     <Image
                       src="/logos/logo-light.svg"
                       alt="Ryan Dey's logo"
@@ -135,7 +131,7 @@ export function MobileNavbar() {
                       className="block dark:hidden"
                     />
                     <p>Ryan Dey</p>
-                  </Link>
+                  </div>
                   <SheetTrigger asChild>
                     <Button
                       variant="ghostFlat"
