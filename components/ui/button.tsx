@@ -5,22 +5,21 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "font-instrumentSans inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-[color,box-shadow,border] disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:cursor-pointer",
+  "font-instrumentSans inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-[color,box-shadow,border,background] disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:cursor-pointer",
   {
     variants: {
       variant: {
         default:
-          "bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 hover:shadow-pop dark:text-foreground",
+          "bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 hover:shadow-pop dark:text-foreground hover:dark:shadow-pop-dark",
         destructive:
           "bg-destructive text-white shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40",
         outline:
-          "border border-primary bg-background shadow-xs hover:text-accent-foreground hover:shadow-pop hover:border-primary/80",
+          "border border-primary bg-background shadow-xs hover:bg-accent hover:text-accent-foreground hover:shadow-pop hover:border-primary/80",
         secondary:
           "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
         ghost:
-          "aspect-square hover:bg-accent/25 hover:text-accent-foreground hover:shadow-pop",
-        ghostFlat:
-          "aspect-square hover:bg-accent/25 hover:text-accent-foreground",
+          "aspect-square hover:bg-accent hover:text-accent-foreground hover:shadow-pop",
+        ghostFlat: "aspect-square hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
       },
       size: {
