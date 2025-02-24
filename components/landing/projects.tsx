@@ -10,12 +10,14 @@ import {
 import { Button } from "../ui/button";
 import { Badge } from "../ui/badge";
 import { Briefcase } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Projects() {
   return (
     <section
       id="projects"
-      className="px-8 py-16 md:py-24 md:px-16 lg:py-28 lg:px-36 border-b border-input"
+      className="flex flex-col px-8 py-16 md:py-24 md:px-16 lg:py-28 lg:px-36 border-b border-input items-center"
     >
       {/* Section Label */}
       <div className="flex gap-2 justify-center items-center py-2 text-muted-foreground ">
@@ -28,30 +30,43 @@ export default function Projects() {
         Some of the <span className="text-primary">work I've done</span>
       </h2>
 
-      <div className="grid gap-4 md:grid-cols-2 2xl:grid-cols-3">
+      <div className="grid gap-8 md:grid-cols-2 2xl:grid-cols-3 mb-12">
         {projects.map((project) => (
-          <Card key={project.title}>
-            <CardHeader>
-              <CardTitle>{project.title}</CardTitle>
-              <CardDescription>Card Description</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p>Card Content</p>
-              <div className="flex gap-2">
-                {project.tags.map((tag) => (
-                  <Badge key={`${project.title}-tag-${tag}`} variant="outline">
-                    {tag}
-                  </Badge>
-                ))}
-              </div>
-            </CardContent>
-            <CardFooter className="flex justify-between">
-              <p className="text-muted-foreground text-sm">2024</p>
-              <Button>Read more</Button>
-            </CardFooter>
-          </Card>
+          <Link key={project.title} href="#" passHref>
+            <Card>
+              <CardHeader>
+                <Image
+                  src="https://github.com/ryandey/homebase/blob/master/public/previews/castle-hills.png?raw=true"
+                  alt={`${project.title} mockup`}
+                  width="500"
+                  height={200}
+                />
+              </CardHeader>
+              <CardContent>
+                {/* Title and Description */}
+                <CardTitle>{project.title}</CardTitle>
+                <CardDescription>{project.summary}</CardDescription>
+
+                {/* Tags */}
+                <div className="flex gap-2 mt-4">
+                  {project.tags.map((tag) => (
+                    <Badge
+                      key={`${project.title}-tag-${tag}`}
+                      variant="secondary"
+                    >
+                      {tag}
+                    </Badge>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </Link>
         ))}
       </div>
+
+      <Link href="https://github.com/ryandey" target="_blank" passHref>
+        <Button size="lg">View more on GitHub</Button>
+      </Link>
     </section>
   );
 }
@@ -60,28 +75,25 @@ const projects = [
   {
     title: "Radiata Web",
     archived: false,
-    url: "/",
+    url: "https://github.com/ryandey/homebase/blob/master/public/previews/castle-hills.png?raw=true",
     previewImage: "",
-    description:
-      "Brief description of this project to showcase what it's about",
+    summary: "Brief description of this project to showcase what it's about",
     tags: ["React", "Express.js", "Next.js"],
   },
   {
-    title: "Radiata Web 2",
+    title: "Castle Hills Stain & Restoration",
     archived: false,
-    url: "/",
+    url: "https://github.com/ryandey/homebase/blob/master/public/previews/castle-hills.png?raw=true",
     previewImage: "",
-    description:
-      "Brief description of this project to showcase what it's about",
+    summary: "Brief description of this project to showcase what it's about",
     tags: ["React", "Express.js", "Next.js"],
   },
   {
-    title: "Radiata Web 3",
+    title: "Jass ATM",
     archived: false,
-    url: "/",
+    url: "https://github.com/ryandey/homebase/blob/master/public/previews/castle-hills.png?raw=true",
     previewImage: "",
-    description:
-      "Brief description of this project to showcase what it's about",
+    summary: "Brief description of this project to showcase what it's about",
     tags: ["React", "Express.js", "Next.js"],
   },
 ];
