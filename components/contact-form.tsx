@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -19,7 +18,6 @@ import { Textarea } from "@/components/ui/textarea";
 const formSchema = z.object({
   fullName: z.string(),
   email: z.string().email().min(5),
-  phone: z.number().min(10).max(10),
   message: z.string(),
 });
 
@@ -29,6 +27,8 @@ export default function ContactForm() {
     resolver: zodResolver(formSchema),
     defaultValues: {
       fullName: "",
+      email: "",
+      message: "",
     },
   });
 
@@ -39,66 +39,68 @@ export default function ContactForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-        <div className="grid md:grid-cols-2 md:gap-8">
-          <div className="flex flex-col gap-4">
-            <FormField
-              control={form.control}
-              name="fullName"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel className="text-3xl">Full Name</FormLabel>
-                  <FormControl>
-                    <Input placeholder="Ryan" {...field} />
-                  </FormControl>
+      <form
+        onSubmit={form.handleSubmit(onSubmit)}
+        className="space-y-8 w-full text-center"
+      >
+        <div className="grid md:grid-cols-2 gap-8 text-left">
+          <FormField
+            control={form.control}
+            name="fullName"
+            render={({ field }) => (
+              <FormItem>
+                <div className="flex gap-4 items-center">
+                  <FormLabel className="text-2xl md:text-3xl">Name</FormLabel>
                   <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="email"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel className="text-3xl">Email Address</FormLabel>
-                  <FormControl>
-                    <Input placeholder="Ryan" {...field} />
-                  </FormControl>
+                </div>
+                <FormControl>
+                  <Input placeholder="John Doe" {...field} />
+                </FormControl>
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="email"
+            render={({ field }) => (
+              <FormItem>
+                <div className="flex gap-4 items-center">
+                  <FormLabel className="text-2xl md:text-3xl">Email</FormLabel>
                   <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="phone"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel className="text-3xl">Phone</FormLabel>
-                  <FormControl>
-                    <Input placeholder="Ryan" {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-          </div>
-          <div>
-            <FormField
-              control={form.control}
-              name="message"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel className="text-3xl">Message</FormLabel>
-                  <FormControl>
-                    <Textarea placeholder="Ryan" {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-          </div>
+                </div>
+                <FormControl>
+                  <Input placeholder="john@example.com" {...field} />
+                </FormControl>
+              </FormItem>
+            )}
+          />
         </div>
-        <Button type="submit">Submit</Button>
+        <div className="text-left">
+          <FormField
+            control={form.control}
+            name="message"
+            render={({ field }) => (
+              <FormItem>
+                <div className="flex gap-4 items-center">
+                  <FormLabel className="text-2xl md:text-3xl">
+                    Message
+                  </FormLabel>
+                  <FormMessage />
+                </div>
+                <FormControl>
+                  <Textarea
+                    placeholder="Write your message here..."
+                    className="max-w-full h-32 resize-none"
+                    {...field}
+                  />
+                </FormControl>
+              </FormItem>
+            )}
+          />
+        </div>
+        <Button type="submit" size="lg">
+          Send my message
+        </Button>
       </form>
     </Form>
   );
