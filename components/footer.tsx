@@ -37,14 +37,14 @@ export default function Footer() {
               alt="Ryan Dey's logo"
               width={30}
               height={30}
-              className="hidden dark:block"
+              className="hidden dark:block h-auto"
             />
             <Image
               src="/logos/logo-dark.svg"
               alt="Ryan Dey's logo"
               width={30}
               height={30}
-              className="block dark:hidden"
+              className="block dark:hidden h-auto"
             />
             <p>Ryan Dey</p>
           </div>
