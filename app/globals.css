@@ -11,6 +11,8 @@
   --shadow-pop: 4px 4px 0 0 oklch(50.46% 0.2082 274.19);
   --shadow-pop-dark: 4px 4px 0 0 oklch(41.99% 0.2082 274.19);
   --shadow-pop-secondary: 4px 4px 0 0 oklch(23.44% 0.0458 280.43 / 60%);
+  --shadow-pop-xl: 8px 8px 0 0 oklch(50.46% 0.2082 274.19);
+  --shadow-pop-xl-dark: 8px 8px 0 0 oklch(41.99% 0.2082 274.19);
 }
 
 :root {
