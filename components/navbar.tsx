@@ -1,13 +1,9 @@
 import React from "react";
 import {
   NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
 import Image from "next/image";
@@ -71,9 +67,19 @@ export default function Navbar() {
               ))}
             </NavigationMenuList>
           </NavigationMenu>
-          <Button variant="ghost" size="icon" className="border-x border-input">
-            <Linkedin />
-          </Button>
+          <Link
+            href="https://linkedin.com/in/ryanpdey"
+            target="_blank"
+            passHref
+          >
+            <Button
+              variant="ghost"
+              size="icon"
+              className="border-x border-input"
+            >
+              <Linkedin />
+            </Button>
+          </Link>
           <ThemeToggle />
         </div>
       </div>
