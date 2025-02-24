@@ -38,11 +38,6 @@ const socials = [
     url: "https://instagram.com/ryanpdey",
     icon: <Instagram />,
   },
-  {
-    title: "Resume",
-    url: "",
-    icon: <Paperclip />,
-  },
 ];
 
 export function MobileNavbar() {
@@ -116,7 +111,7 @@ export function MobileNavbar() {
             </SheetTrigger>
 
             {/* Menu */}
-            <SheetContent side="right" className="w-[80%]">
+            <SheetContent side="right" className="w-[90%]">
               <SheetHeader className="border-b border-input">
                 <SheetTitle className="flex items-center justify-between">
                   {/* Logo and Workmark */}
@@ -153,7 +148,7 @@ export function MobileNavbar() {
                   </SheetTrigger>
                 </SheetTitle>
               </SheetHeader>
-              <nav className="flex flex-col m-8 space-y-8 font-instrumentSerif">
+              <nav className="flex flex-col m-8 ml-12 space-y-8 font-instrumentSerif">
                 {navItems.map((item) => (
                   <Link
                     key={item.name}
@@ -169,10 +164,7 @@ export function MobileNavbar() {
               <SheetDescription />
 
               {/* Socials */}
-              <div className="mt-auto border-t border-input flex justify-between items-center">
-                <h2 className="text-xl pl-7">
-                  My <span className="text-primary">Socials</span>
-                </h2>
+              <div className="mt-auto border-t border-input flex justify-end items-center">
                 <div className="flex">
                   {socials.map((social) => (
                     <Link
