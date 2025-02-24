@@ -73,7 +73,7 @@ export default function Navbar() {
             passHref
           >
             <Button
-              variant="ghost"
+              variant="ghostFlat"
               size="icon"
               className="border-x border-input"
             >
