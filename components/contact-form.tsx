@@ -41,7 +41,7 @@ export default function ContactForm() {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="space-y-8 w-full text-center"
+        className="space-y-8 w-full text-center max-w-7xl"
       >
         <div className="grid md:grid-cols-2 gap-8 text-left">
           <FormField

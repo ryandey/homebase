@@ -19,7 +19,9 @@ export default function Contact() {
         Let's <span className="text-primary">get in touch</span>
       </h2>
 
-      <ContactForm />
+      <div className="flex justify-center items-center">
+        <ContactForm />
+      </div>
     </section>
   );
 }
