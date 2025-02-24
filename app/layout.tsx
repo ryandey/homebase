@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import { MobileNavbar } from "@/components/mobile-nav";
 
 const instrumentSans = Instrument_Sans({
   variable: "--font-instrument-sans",
@@ -39,6 +40,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <MobileNavbar />
           <Navbar />
           <div className="md:mx-14 md:border-x border-input">{children}</div>
           <Footer />
