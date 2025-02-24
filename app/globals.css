@@ -8,7 +8,8 @@
   --font-instrumentSans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
   --font-instrumentSerif: "Instrument Serif", ui-serif, Georgia,
     "Times New Roman";
-  --shadow-pop: 4px 4px 0 0 oklch(50.46% 0.2082 274.19 / 60%);
+  --shadow-pop: 4px 4px 0 0 oklch(50.46% 0.2082 274.19);
+  --shadow-pop-dark: 4px 4px 0 0 oklch(41.99% 0.2082 274.19);
   --shadow-pop-secondary: 4px 4px 0 0 oklch(23.44% 0.0458 280.43 / 60%);
 }
 
@@ -25,7 +26,7 @@
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
+  --accent: oklch(50.46% 0.2082 274.19 / 5%);
   --accent-foreground: oklch(0.205 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.577 0.245 27.325);
@@ -61,7 +62,7 @@
   --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.269 0 0);
   --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
+  --accent: oklch(50.46% 0.2082 274.19 / 15%);
   --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.396 0.141 25.723);
   --destructive-foreground: oklch(0.637 0.237 25.331);
