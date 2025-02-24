@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import React from "react";
 
 export default function Hero() {
@@ -14,8 +15,13 @@ export default function Hero() {
           React interfaces.
         </p>
         <div className="mt-8 space-x-4">
-          <Button variant="default">See my work</Button>
-          <Button variant="outline">Get my resume</Button>
+          <Link href="/#contact" passHref>
+            <Button variant="default">Get in touch</Button>
+          </Link>
+
+          <Link href="/#projects" passHref>
+            <Button variant="outline">See my work</Button>
+          </Link>
         </div>
       </div>
     </section>
