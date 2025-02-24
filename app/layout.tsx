@@ -3,6 +3,7 @@ import { Instrument_Serif, Instrument_Sans } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 const instrumentSans = Instrument_Sans({
   variable: "--font-instrument-sans",
@@ -40,6 +41,7 @@ export default function RootLayout({
         >
           <Navbar />
           <div className="md:mx-14 md:border-x border-input">{children}</div>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
