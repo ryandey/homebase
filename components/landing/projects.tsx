@@ -15,7 +15,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="px-4 lg:px-36 py-28 border-b border-input"
+      className="px-8 py-16 md:py-24 md:px-16 lg:py-28 lg:px-36 border-b border-input"
     >
       {/* Section Label */}
       <div className="flex gap-2 justify-center items-center py-2 text-muted-foreground ">
@@ -28,7 +28,7 @@ export default function Projects() {
         Some of the <span className="text-primary">work I've done</span>
       </h2>
 
-      <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+      <div className="grid gap-4 md:grid-cols-2 2xl:grid-cols-3">
         {projects.map((project) => (
           <Card key={project.title}>
             <CardHeader>
