@@ -54,7 +54,7 @@ export default function ContactForm() {
                   <FormMessage />
                 </div>
                 <FormControl>
-                  <Input placeholder="John Doe" {...field} />
+                  <Input placeholder="John Doe" {...field} required />
                 </FormControl>
               </FormItem>
             )}
@@ -69,7 +69,7 @@ export default function ContactForm() {
                   <FormMessage />
                 </div>
                 <FormControl>
-                  <Input placeholder="john@example.com" {...field} />
+                  <Input placeholder="john@example.com" {...field} required />
                 </FormControl>
               </FormItem>
             )}
@@ -92,6 +92,7 @@ export default function ContactForm() {
                     placeholder="Write your message here..."
                     className="max-w-full h-32 resize-none"
                     {...field}
+                    required
                   />
                 </FormControl>
               </FormItem>
