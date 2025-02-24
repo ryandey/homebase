@@ -30,8 +30,8 @@ export default function Footer() {
   return (
     <footer className="flex justify-between items-center border-y border-input -translate-y-[1px]">
       <div className="mx-14 sm:border-x border-input w-full h-full">
-        <div className="grid md:grid-cols-3 gap-4 sm:flex-row h-full items-center justify-between">
-          <div className="flex flex-row items-center gap-3 px-6 h-full">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 h-full gap-2 items-center py-4 md:py-0">
+          <div className="flex flex-row justify-center items-center gap-3 px-6 h-full">
             <Image
               src="/logos/logo-light.svg"
               alt="Ryan Dey's logo"
@@ -53,7 +53,7 @@ export default function Footer() {
             Copyright © 2025 Ryan Dey
           </p>
 
-          <div className="flex justify-end">
+          <div className="hidden md:flex justify-end">
             {socials.map((social) => (
               <Link
                 key={social.title}
