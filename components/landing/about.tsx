@@ -29,32 +29,35 @@ export default function About() {
       </div>
 
       {/* Card Grid */}
-      <div className="grid md:text-center md:grid-cols-3 gap-12 md:gap-16 lg:gap-24 xl:gap-42 ">
+      <div className="grid gap-8 md:text-center md:text-sm md:grid-cols-3 md:gap-16 lg:gap-24 lg:text-sm xl:text-base xl:gap-42">
         <div>
           <h3 className="text-4xl italic mb-4 md:text-center">Yesterday</h3>
           <p className="text-muted-foreground">
-            I discovered my passion for programming through my early experiences
-            with HTML and CSS. During high school, I worked as a freelance
-            graphic designer, which has given me a deep appreciation for
-            exceptional design.
+            I first discovered my passion for programming through my early
+            experiences with HTML/CSS in middle school. During high school, I
+            worked as a freelance graphic designer for several engineering
+            teams, teaching me valuable lessons in UI/UX design and how to
+            approach designing for accessible web applications.
           </p>
         </div>
         <div>
           <h3 className="text-4xl italic mb-4 md:text-center">Today</h3>
           <p className="text-muted-foreground">
-            I discovered my passion for programming through my early experiences
-            with HTML and CSS. During high school, I worked as a freelance
-            graphic designer, which has given me a deep appreciation for
-            exceptional design.
+            The lessons I've learned during my time in high school, university,
+            and as a working professional are ever present in my work as a
+            software engineer. I love creating innovative and interesting user
+            interfaces for a variety of personal and enterprise applications.
+            The balance between accessibility and aesthetics is always apparent.
           </p>
         </div>
         <div>
           <h3 className="text-4xl italic mb-4 md:text-center">Tomorrow</h3>
           <p className="text-muted-foreground">
-            I discovered my passion for programming through my early experiences
-            with HTML and CSS. During high school, I worked as a freelance
-            graphic designer, which has given me a deep appreciation for
-            exceptional design.
+            Having contributed to a variety of projects, teams, and
+            applications, I've found that I am always eager to learn more about
+            the technologies and people I work with. I firmly believe that
+            education is a life-long endeavor, and I strive to continue learning
+            more about things that help me as a professional and as a human.
           </p>
         </div>
       </div>
