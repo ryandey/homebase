@@ -14,7 +14,6 @@ import Image from "next/image";
 import { Button } from "./ui/button";
 import { Linkedin } from "lucide-react";
 import ThemeToggle from "./theme-toggle";
-import Logo from "./logo";
 
 const navItems = [
   {
@@ -37,12 +36,12 @@ const navItems = [
 
 export default function Navbar() {
   return (
-    <div className="fixed top-0 w-full bg-background/50 backdrop-blur-xl border-b border-input h-14 hidden lg:block">
+    <div className="fixed top-0 z-50 w-full bg-background/50 backdrop-blur-xl border-b border-input h-14 hidden lg:block">
       <div className="flex flex-row justify-between items-center h-full">
         <Link
           href="/"
           passHref
-          className="flex flex-row items-center gap-3 pl-6 pr-20 border-r border-input h-full hover:bg-accent transition-all"
+          className="flex flex-row items-center gap-3 pl-6 pr-20 border-r border-input h-full bg-background/0 hover:bg-accent/50 transition-all"
         >
           <Image
             src="/logos/logo-light.svg"
