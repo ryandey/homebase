@@ -32,12 +32,12 @@ const navItems = [
 
 export default function Navbar() {
   return (
-    <div className="fixed top-0 z-50 w-full bg-background/50 backdrop-blur-xl border-b border-input h-14 hidden lg:block">
+    <div className="fixed top-0 z-50 w-full bg-background/50 backdrop-blur-xl border-b border-input h-14 hidden sm:block">
       <div className="flex flex-row justify-between items-center h-full">
         <Link
           href="/"
           passHref
-          className="flex flex-row items-center gap-3 pl-6 pr-20 border-r border-input h-full bg-background/0 hover:bg-accent/50 transition-all"
+          className="flex flex-row items-center gap-3 pl-6 sm:pr-8 md:pr-20 border-r border-input h-full bg-background/0 hover:bg-accent/50 transition-all"
         >
           <Image
             src="/logos/logo-light.svg"
@@ -71,6 +71,7 @@ export default function Navbar() {
             href="https://linkedin.com/in/ryanpdey"
             target="_blank"
             passHref
+            className="hidden md:block"
           >
             <Button
               variant="ghostFlat"
