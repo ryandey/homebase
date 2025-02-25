@@ -30,15 +30,15 @@ export default function Projects() {
         Some of the <span className="text-primary">work I've done</span>
       </h2>
 
-      <div className="grid gap-8 grid-rows-1 md:grid-cols-2 2xl:grid-cols-3 mb-12">
+      <div className="grid gap-8 grid-rows-1 lg:grid-cols-2 2xl:grid-cols-3 mb-12">
         {projects.map((project) => (
-          <Link key={project.title} href="#">
+          <Link key={project.title} href={project.url}>
             <Card>
               <CardHeader>
                 <Image
-                  src="https://github.com/ryandey/homebase/blob/master/public/previews/castle-hills.png?raw=true"
+                  src={project.previewImage}
                   alt={`${project.title} mockup`}
-                  width="500"
+                  width={500}
                   height={200}
                 />
               </CardHeader>
@@ -79,8 +79,9 @@ const projects = [
   {
     title: "Personal Portfolio",
     archived: false,
-    url: "https://github.com/ryandey/homebase/blob/master/public/previews/castle-hills.png?raw=true",
-    previewImage: "",
+    url: "/projects/my-personal-portfolio",
+    previewImage:
+      "https://github.com/ryandey/homebase/blob/master/public/previews/castle-hills.png?raw=true",
     summary:
       "Version 3 of my personal portfolio, built to practice with Tailwind 4.0.",
     tags: ["React.js", "Next.js", "Tailwind CSS", "Shadcn-UI"],
@@ -88,8 +89,9 @@ const projects = [
   {
     title: "Castle Hills Stain & Restoration",
     archived: false,
-    url: "https://github.com/ryandey/homebase/blob/master/public/previews/castle-hills.png?raw=true",
-    previewImage: "",
+    url: "/projects/castle-hills-stain-and-restoration",
+    previewImage:
+      "https://github.com/ryandey/homebase/blob/master/public/previews/castle-hills.png?raw=true",
     summary:
       "Website for a fence and gate contractor located in Carrollton, TX.",
     tags: ["TypeScript", "React.js", "Next.js", "Tailwind CSS"],
@@ -97,8 +99,9 @@ const projects = [
   {
     title: "Jass ATM",
     archived: false,
-    url: "https://github.com/ryandey/homebase/blob/master/public/previews/castle-hills.png?raw=true",
-    previewImage: "",
+    url: "/projects/jass-atm",
+    previewImage:
+      "https://github.com/ryandey/homebase/blob/master/public/previews/castle-hills.png?raw=true",
     summary: "Website for an ATM sales & service business in Jacksonville, FL.",
     tags: ["JavaScript", "React.js", "Next.js", "Chakra UI"],
   },
