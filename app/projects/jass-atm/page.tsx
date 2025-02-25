@@ -8,6 +8,7 @@ export default function Page() {
         heading="Jass ATM"
         subtitle="Development In Progress"
         liveUrl="https://jassatm.com/"
+        sourceUrl="https://github.com/radiata-web/jass-atm/"
       />
 
       {/* Page content */}

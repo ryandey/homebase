@@ -7,6 +7,8 @@ export default function Page() {
       <Hero
         heading="Castle Hills Stain & Restoration"
         subtitle="Completed: September 2024"
+        liveUrl="https://chstainandrestoration.com/"
+        sourceUrl="https://github.com/radiata-web/castle-hills/"
       />
 
       {/* Page content */}
