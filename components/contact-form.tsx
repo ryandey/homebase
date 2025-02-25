@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { log } from "console";
 
 const formSchema = z.object({
   fullName: z.string(),
@@ -34,19 +35,25 @@ export default function ContactForm() {
 
   //   Submission handler
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    // post form data to /__forms.html
     const formData = new FormData();
+
+    // Append form fields
     formData.append("fullName", values.fullName);
     formData.append("email", values.email);
     formData.append("message", values.message);
 
-    await fetch("/__forms.html", {
+    // Submit to static form for Netlify
+    const response = await fetch("/__forms.html", {
       method: "POST",
-      body: formData,
+      body: formData.toString(),
     });
 
     // Show success
-    console.log("Form submitted");
+    if (response.ok) {
+      console.log("Form submitted");
+    } else {
+      console.log("Form submission failed");
+    }
   }
 
   return (
