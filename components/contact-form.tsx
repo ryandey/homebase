@@ -33,7 +33,7 @@ export default function ContactForm() {
   });
 
   //   Submission handler
-  async function onSubmit(values: z.infer<typeof formSchema>, response: any) {
+  async function onSubmit(values: z.infer<typeof formSchema>) {
     // post form data to /__forms.html
     const formData = new FormData();
     formData.append("fullName", values.fullName);
@@ -46,11 +46,7 @@ export default function ContactForm() {
     });
 
     // Show success
-    if (response.ok) {
-      console.log("Form submitted successfully");
-    } else {
-      console.error("Form submission failed");
-    }
+    console.log("Form submitted");
   }
 
   return (
