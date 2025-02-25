@@ -33,8 +33,24 @@ export default function ContactForm() {
   });
 
   //   Submission handler
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+  async function onSubmit(values: z.infer<typeof formSchema>, response: any) {
+    // post form data to /__forms.html
+    const formData = new FormData();
+    formData.append("fullName", values.fullName);
+    formData.append("email", values.email);
+    formData.append("message", values.message);
+
+    await fetch("/__forms.html", {
+      method: "POST",
+      body: formData,
+    });
+
+    // Show success
+    if (response.ok) {
+      console.log("Form submitted successfully");
+    } else {
+      console.error("Form submission failed");
+    }
   }
 
   return (
@@ -42,7 +58,9 @@ export default function ContactForm() {
       <form
         onSubmit={form.handleSubmit(onSubmit)}
         className="space-y-8 w-full text-center max-w-7xl"
+        name="contact"
       >
+        <input type="hidden" name="form-name" value="contact" />
         <div className="grid md:grid-cols-2 gap-8 text-left">
           <FormField
             control={form.control}
