@@ -3,7 +3,6 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -27,7 +26,7 @@ export default function Projects() {
 
       {/* Heading */}
       <h2 className="text-6xl mb-16 text-center">
-        Some of the <span className="text-primary">work I've done</span>
+        Some of the <span className="text-primary">work I&apos;ve done</span>
       </h2>
 
       <div className="grid gap-8 grid-rows-1 lg:grid-cols-2 2xl:grid-cols-3 mb-12">

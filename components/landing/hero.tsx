@@ -11,8 +11,8 @@ export default function Hero() {
           <br /> I'm <span className="text-primary">Ryan Dey</span>.
         </h1>
         <p>
-          I’m a full-stack software engineer specializing in crafting beautiful
-          React interfaces.
+          I&apos;m a full-stack software engineer specializing in crafting
+          beautiful React interfaces.
         </p>
         <div className="mt-8 space-x-4">
           <Link href="/#contact" passHref>

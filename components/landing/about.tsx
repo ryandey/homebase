@@ -43,19 +43,20 @@ export default function About() {
         <div>
           <h3 className="text-4xl italic mb-4 md:text-center">Today</h3>
           <p className="text-muted-foreground">
-            The lessons I've learned during my time in high school, university,
-            and as a working professional are ever present in my work as a
-            software engineer. I love creating innovative and interesting user
-            interfaces for a variety of personal and enterprise applications.
-            The balance between accessibility and aesthetics is always apparent.
+            The lessons I&apos;ve learned during my time in high school,
+            university, and as a working professional are ever present in my
+            work as a software engineer. I love creating innovative and
+            interesting user interfaces for a variety of personal and enterprise
+            applications. The balance between accessibility and aesthetics is
+            always apparent.
           </p>
         </div>
         <div>
           <h3 className="text-4xl italic mb-4 md:text-center">Tomorrow</h3>
           <p className="text-muted-foreground">
             Having contributed to a variety of projects, teams, and
-            applications, I've found that I am always eager to learn more about
-            the technologies and people I work with. I firmly believe that
+            applications, I&apos;ve found that I am always eager to learn more
+            about the technologies and people I work with. I firmly believe that
             education is a life-long endeavor, and I strive to continue learning
             more about things that help me as a professional and as a human.
           </p>

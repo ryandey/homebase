@@ -16,7 +16,7 @@ export default function Contact() {
 
       {/* Heading */}
       <h2 className="text-6xl mb-16 text-center">
-        Let's <span className="text-primary">get in touch</span>
+        Let&apos;s <span className="text-primary">get in touch</span>
       </h2>
 
       <div className="flex justify-center items-center">

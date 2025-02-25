@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X, Github, Instagram, Linkedin, Paperclip } from "lucide-react";
+import { Menu, X, Github, Instagram, Linkedin } from "lucide-react";
 import {
   Sheet,
   SheetContent,
