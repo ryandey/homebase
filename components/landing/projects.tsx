@@ -80,8 +80,7 @@ const projects = [
     title: "Personal Portfolio",
     archived: false,
     url: "/projects/my-personal-portfolio",
-    previewImage:
-      "https://github.com/ryandey/homebase/blob/master/public/previews/castle-hills.png?raw=true",
+    previewImage: "/previews/ryan-dey.png",
     summary:
       "Version 3 of my personal portfolio, built to practice with Tailwind 4.0.",
     tags: ["React.js", "Next.js", "Tailwind CSS", "Shadcn-UI"],
@@ -90,8 +89,7 @@ const projects = [
     title: "Castle Hills Stain & Restoration",
     archived: false,
     url: "/projects/castle-hills-stain-and-restoration",
-    previewImage:
-      "https://github.com/ryandey/homebase/blob/master/public/previews/castle-hills.png?raw=true",
+    previewImage: "/previews/castle-hills.png",
     summary:
       "Website for a fence and gate contractor located in Carrollton, TX.",
     tags: ["TypeScript", "React.js", "Next.js", "Tailwind CSS"],
@@ -100,8 +98,7 @@ const projects = [
     title: "Jass ATM",
     archived: false,
     url: "/projects/jass-atm",
-    previewImage:
-      "https://github.com/ryandey/homebase/blob/master/public/previews/castle-hills.png?raw=true",
+    previewImage: "/previews/jass-atm.png",
     summary: "Website for an ATM sales & service business in Jacksonville, FL.",
     tags: ["JavaScript", "React.js", "Next.js", "Chakra UI"],
   },
