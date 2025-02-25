@@ -5,9 +5,9 @@ export default function Page() {
   return (
     <div className="mt-14">
       <Hero
-        heading="Radiata Web"
+        heading="Jass ATM"
         subtitle="Development In Progress"
-        liveUrl="https://radiataweb.com/"
+        liveUrl="https://jassatm.com/"
       />
 
       {/* Page content */}
