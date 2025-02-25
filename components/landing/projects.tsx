@@ -30,9 +30,9 @@ export default function Projects() {
         Some of the <span className="text-primary">work I've done</span>
       </h2>
 
-      <div className="grid gap-8 md:grid-cols-2 2xl:grid-cols-3 mb-12">
+      <div className="grid gap-8 grid-rows-1 md:grid-cols-2 2xl:grid-cols-3 mb-12">
         {projects.map((project) => (
-          <Link key={project.title} href="#" passHref>
+          <Link key={project.title} href="#">
             <Card>
               <CardHeader>
                 <Image
@@ -42,13 +42,17 @@ export default function Projects() {
                   height={200}
                 />
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex flex-col justify-between gap-4 h-full">
                 {/* Title and Description */}
-                <CardTitle>{project.title}</CardTitle>
-                <CardDescription>{project.summary}</CardDescription>
+                <div>
+                  <CardTitle>{project.title}</CardTitle>
+                  <CardDescription className="max-w-110">
+                    {project.summary}
+                  </CardDescription>
+                </div>
 
                 {/* Tags */}
-                <div className="flex gap-2 mt-4">
+                <div className="flex gap-2 flex-wrap">
                   {project.tags.map((tag) => (
                     <Badge
                       key={`${project.title}-tag-${tag}`}
@@ -73,27 +77,29 @@ export default function Projects() {
 
 const projects = [
   {
-    title: "Radiata Web",
+    title: "Personal Portfolio",
     archived: false,
     url: "https://github.com/ryandey/homebase/blob/master/public/previews/castle-hills.png?raw=true",
     previewImage: "",
-    summary: "Brief description of this project to showcase what it's about",
-    tags: ["React", "Express.js", "Next.js"],
+    summary:
+      "Version 3 of my personal portfolio, built to practice with Tailwind 4.0.",
+    tags: ["React.js", "Next.js", "Tailwind CSS", "Shadcn-UI"],
   },
   {
     title: "Castle Hills Stain & Restoration",
     archived: false,
     url: "https://github.com/ryandey/homebase/blob/master/public/previews/castle-hills.png?raw=true",
     previewImage: "",
-    summary: "Brief description of this project to showcase what it's about",
-    tags: ["React", "Express.js", "Next.js"],
+    summary:
+      "Website for a fence and gate contractor located in Carrollton, TX.",
+    tags: ["TypeScript", "React.js", "Next.js", "Tailwind CSS"],
   },
   {
     title: "Jass ATM",
     archived: false,
     url: "https://github.com/ryandey/homebase/blob/master/public/previews/castle-hills.png?raw=true",
     previewImage: "",
-    summary: "Brief description of this project to showcase what it's about",
-    tags: ["React", "Express.js", "Next.js"],
+    summary: "Website for an ATM sales & service business in Jacksonville, FL.",
+    tags: ["JavaScript", "React.js", "Next.js", "Chakra UI"],
   },
 ];
