@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "./ui/button";
-import { Github, Instagram, Linkedin, Paperclip } from "lucide-react";
+import { Github, Instagram, Linkedin } from "lucide-react";
 
 const socials = [
   {
