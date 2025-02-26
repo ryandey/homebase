@@ -17,7 +17,7 @@ import { Textarea } from "@/components/ui/textarea";
 import Success from "@/components/success";
 
 const contactSchema = z.object({
-  fullName: z.string().min(2),
+  name: z.string().min(2),
   email: z.string().email().min(5),
   message: z.string(),
   "form-name": z.string().default("contact"),
@@ -31,7 +31,7 @@ export default function ContactForm() {
   const form = useForm<z.infer<typeof contactSchema>>({
     resolver: zodResolver(contactSchema),
     defaultValues: {
-      fullName: "",
+      name: "",
       email: "",
       message: "",
       "form-name": "contact",
@@ -40,25 +40,18 @@ export default function ContactForm() {
 
   //   Submission handler
   async function onSubmit(data: z.infer<typeof contactSchema>) {
-    setIsSubmitting(true);
-    console.log(data);
+    setIsSubmitting(true); // Disable form fields/submit button while submitting
     try {
-      const response = await fetch("/__forms.html", {
+      await fetch("/__forms.html", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(data).toString(),
       });
-
-      // Show success
-      if (response.ok) {
-        console.log("Form submitted");
-      } else {
-        console.log("Form submission failed");
-      }
     } catch {
-      alert("Something went wrong. Please try again.");
+      alert("Something went wrong sending your message. Please try again.");
     } finally {
       setIsSubmitting(false);
+      setIsSuccess(true);
     }
   }
 
@@ -76,7 +69,7 @@ export default function ContactForm() {
           <div className="grid md:grid-cols-2 gap-8 text-left">
             <FormField
               control={form.control}
-              name="fullName"
+              name="name"
               render={({ field }) => (
                 <FormItem>
                   <div className="flex gap-4 items-center">
