@@ -12,7 +12,7 @@ export default function NotFound() {
           Page <span className="text-primary">not found</span>.
         </h1>
         <p className="text-muted-foreground mb-4 text-center">
-          The page you were looking for doesn't exist.
+          The page you were looking for does not exist.
         </p>
         <Link href="/" passHref>
           <Button size="lg">Return to homepage</Button>
