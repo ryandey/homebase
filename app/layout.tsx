@@ -23,6 +23,23 @@ export const metadata: Metadata = {
   title: "Ryan Dey | Software Engineer Portfolio",
   description:
     "Ryan Dey is a full-stack JS/TS software engineer, specializing in creating accessible and innovative React interfaces.",
+  openGraph: {
+    title: "Ryan Dey | Software Engineer Portfolio",
+    description:
+      "Ryan Dey is a full-stack JS/TS software engineer, specializing in creating accessible and innovative React interfaces.",
+    url: "https://ryanpdey.com",
+    siteName: "Ryan Dey | Software Engineer Portfolio",
+    locale: "en-US",
+    type: "website",
+    images: [
+      {
+        url: "https://ryanpdey.com/og.png",
+        width: 440,
+        height: 220,
+        alt: "Website preview for Ryan Dey's software engineer portfolio",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
