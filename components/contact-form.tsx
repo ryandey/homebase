@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
@@ -14,45 +14,48 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { log } from "console";
 
-const formSchema = z.object({
-  fullName: z.string(),
+const contactSchema = z.object({
+  fullName: z.string().min(2),
   email: z.string().email().min(5),
   message: z.string(),
+  "form-name": z.string().default("contact"),
 });
 
 export default function ContactForm() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   // Zod validator
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
+  const form = useForm<z.infer<typeof contactSchema>>({
+    resolver: zodResolver(contactSchema),
     defaultValues: {
       fullName: "",
       email: "",
       message: "",
+      "form-name": "contact",
     },
   });
 
   //   Submission handler
-  async function onSubmit(values: z.infer<typeof formSchema>) {
-    const formData = new FormData();
+  async function onSubmit(data: z.infer<typeof contactSchema>) {
+    setIsSubmitting(true);
+    try {
+      const response = await fetch("/__forms.html", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(data).toString(),
+      });
 
-    // Append form fields
-    formData.append("fullName", values.fullName);
-    formData.append("email", values.email);
-    formData.append("message", values.message);
-
-    // Submit to static form for Netlify
-    const response = await fetch("/__forms.html", {
-      method: "POST",
-      body: formData.toString(),
-    });
-
-    // Show success
-    if (response.ok) {
-      console.log("Form submitted");
-    } else {
-      console.log("Form submission failed");
+      // Show success
+      if (response.ok) {
+        console.log("Form submitted");
+      } else {
+        console.log("Form submission failed");
+      }
+    } catch {
+      alert("Something went wrong. Please try again.");
+    } finally {
+      setIsSubmitting(false);
     }
   }
 
@@ -75,7 +78,13 @@ export default function ContactForm() {
                   <FormMessage />
                 </div>
                 <FormControl>
-                  <Input placeholder="John Doe" {...field} required />
+                  <Input
+                    placeholder="John Doe"
+                    {...field}
+                    required
+                    disabled={isSubmitting}
+                    minLength={2}
+                  />
                 </FormControl>
               </FormItem>
             )}
@@ -90,7 +99,13 @@ export default function ContactForm() {
                   <FormMessage />
                 </div>
                 <FormControl>
-                  <Input placeholder="john@example.com" {...field} required />
+                  <Input
+                    placeholder="john@example.com"
+                    {...field}
+                    required
+                    disabled={isSubmitting}
+                    type="email"
+                  />
                 </FormControl>
               </FormItem>
             )}
@@ -114,14 +129,15 @@ export default function ContactForm() {
                     className="max-w-full h-32 resize-none"
                     {...field}
                     required
+                    disabled={isSubmitting}
                   />
                 </FormControl>
               </FormItem>
             )}
           />
         </div>
-        <Button type="submit" size="lg">
-          Send my message
+        <Button type="submit" size="lg" disabled={isSubmitting}>
+          {!isSubmitting ? <>Send my message</> : <>Submitting...</>}
         </Button>
       </form>
     </Form>
