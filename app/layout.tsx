@@ -40,6 +40,17 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ryan Dey | Software Engineer Portfolio",
+    description:
+      "Ryan Dey is a full-stack JS/TS software engineer, specializing in creating accessible and innovative React interfaces.",
+    creator: "@ryanpdey",
+    images: {
+      url: "https://ryanpdey.com/og.png",
+      alt: "Website preview for Ryan Dey's software engineer portfolio",
+    },
+  },
 };
 
 export default function RootLayout({
