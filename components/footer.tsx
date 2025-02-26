@@ -19,11 +19,6 @@ const socials = [
     url: "https://instagram.com/ryanpdey",
     icon: <Instagram />,
   },
-  {
-    title: "Resume",
-    url: "",
-    icon: <Paperclip />,
-  },
 ];
 
 export default function Footer() {
