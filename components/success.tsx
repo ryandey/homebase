@@ -7,7 +7,7 @@ export default function Success() {
         Your message has been sent!
       </p>
       <p className="text-muted-foreground text-center">
-        Thank you for taking the time to reach out. I'll respond as soon as
+        Thank you for taking the time to reach out. I will respond as soon as
         possible.
       </p>
     </div>
