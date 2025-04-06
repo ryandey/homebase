@@ -137,6 +137,10 @@ export default function ContactForm() {
               )}
             />
           </div>
+          <div
+            className="cf-turnstile"
+            data-sitekey="0x4AAAAAABE6snkzPzW7rJRa"
+          ></div>
           <Button type="submit" size="lg" disabled={isSubmitting}>
             {!isSubmitting ? <>Send my message</> : <>Submitting...</>}
           </Button>
