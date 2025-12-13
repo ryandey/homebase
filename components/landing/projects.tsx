@@ -23,12 +23,10 @@ export default function Projects() {
         <Briefcase size={16} />
         <p className="text-sm">Work & Projects</p>
       </div>
-
       {/* Heading */}
       <h2 className="text-6xl mb-16 text-center">
         Some of the <span className="text-primary">work I&apos;ve done</span>
       </h2>
-
       <div className="grid gap-8 grid-rows-1 lg:grid-cols-2 2xl:grid-cols-3 mb-12">
         {projects.map((project) => (
           <Link key={project.title} href={project.url}>
@@ -66,8 +64,7 @@ export default function Projects() {
           </Link>
         ))}
       </div>
-
-      <Link href="https://github.com/ryandey" target="_blank" passHref>
+      <Link href="https://github.com/ryandey" target="_blank">
         <Button size="lg">View more on GitHub</Button>
       </Link>
     </section>

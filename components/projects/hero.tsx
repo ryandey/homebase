@@ -18,16 +18,15 @@ export default function Hero(props: HeroProps) {
         {heading}
       </h1>
       <p className="text-muted-foreground">{subtitle}</p>
-
       {liveUrl || sourceUrl ? (
         <div className="pt-8 flex gap-4">
           {liveUrl && (
-            <Link href={liveUrl} passHref>
+            <Link href={liveUrl}>
               <Button>Visit live site</Button>
             </Link>
           )}
           {sourceUrl && (
-            <Link href={sourceUrl} passHref>
+            <Link href={sourceUrl}>
               <Button variant="outline">View source</Button>
             </Link>
           )}

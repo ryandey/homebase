@@ -50,12 +50,7 @@ export default function Footer() {
 
           <div className="hidden md:flex justify-end">
             {socials.map((social) => (
-              <Link
-                key={social.title}
-                href={social.url}
-                target="_blank"
-                passHref
-              >
+              <Link key={social.title} href={social.url} target="_blank">
                 <Button
                   variant="ghostFlat"
                   size="icon"
