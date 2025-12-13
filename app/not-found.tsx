@@ -14,7 +14,7 @@ export default function NotFound() {
         <p className="text-muted-foreground mb-4 text-center">
           The page you were looking for does not exist.
         </p>
-        <Link href="/" passHref>
+        <Link href="/">
           <Button size="lg">Return to homepage</Button>
         </Link>
       </div>

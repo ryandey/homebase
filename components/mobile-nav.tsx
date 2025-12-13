@@ -72,9 +72,7 @@ export function MobileNavbar() {
         {/* Logo and Workmark */}
         <Link
           href="/"
-          passHref
-          className="flex flex-row items-center gap-3 pl-6 pr-8 border-r border-input h-full bg-background/0 hover:bg-accent/50 transition-all"
-        >
+          className="flex flex-row items-center gap-3 pl-6 pr-8 border-r border-input h-full bg-background/0 hover:bg-accent/50 transition-all">
           <Image
             src="/logos/logo-light.svg"
             alt="Ryan Dey's logo"
@@ -163,12 +161,7 @@ export function MobileNavbar() {
               <div className="mt-auto border-t border-input flex justify-end items-center">
                 <div className="flex">
                   {socials.map((social) => (
-                    <Link
-                      key={social.title}
-                      href={social.url}
-                      target="_blank"
-                      passHref
-                    >
+                    <Link key={social.title} href={social.url} target="_blank">
                       <Button
                         variant="ghostFlat"
                         size="icon"

@@ -15,11 +15,11 @@ export default function Hero() {
           beautiful React interfaces.
         </p>
         <div className="mt-8 space-x-4">
-          <Link href="/#contact" passHref>
+          <Link href="/#contact">
             <Button variant="default">Get in touch</Button>
           </Link>
 
-          <Link href="/#projects" passHref>
+          <Link href="/#projects">
             <Button variant="outline">See my work</Button>
           </Link>
         </div>
