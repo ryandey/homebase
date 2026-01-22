@@ -37,15 +37,11 @@ function RouteComponent() {
                   </h2>
 
                   {article.description && (
-                    <p className="text-gray-400 mb-4 leading-relaxed">
-                      {article.description}
-                    </p>
+                    <p className="text-gray-400 mb-4 leading-relaxed">{article.description}</p>
                   )}
 
                   {article.content && (
-                    <p className="text-gray-400 line-clamp-3 leading-relaxed">
-                      {article.content}
-                    </p>
+                    <p className="text-gray-400 line-clamp-3 leading-relaxed">{article.content}</p>
                   )}
 
                   {article.createdAt && (

@@ -1,25 +1,29 @@
 {
   "name": "homebase",
+  "version": "4.0.0",
   "private": true,
   "type": "module",
-  "version": "4.0.0",
   "scripts": {
     "dev": "vite dev --port 3000",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "vitest run"
+    "test": "vitest run",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check"
   },
   "dependencies": {
     "@strapi/client": "^1.6.0",
     "@tailwindcss/vite": "^4.1.18",
-    "@tanstack/react-devtools": "^0.7.11",
+    "@tanstack/react-devtools": "^0.9.2",
     "@tanstack/react-form": "^1.27.7",
     "@tanstack/react-router": "^1.154.6",
     "@tanstack/react-router-devtools": "^1.154.6",
     "@tanstack/react-router-ssr-query": "^1.154.6",
     "@tanstack/react-start": "^1.154.6",
     "@tanstack/router-plugin": "^1.154.6",
-    "lucide-react": "^0.561.0",
+    "lucide-react": "^0.562.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "tailwindcss": "^4.1.18",
@@ -28,18 +32,20 @@
   },
   "devDependencies": {
     "@netlify/vite-plugin-tanstack-start": "^1.2.7",
-    "@tanstack/devtools-vite": "^0.3.12",
+    "@tanstack/devtools-vite": "^0.4.1",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/react": "^16.3.2",
-    "@types/node": "^22.19.7",
+    "@types/node": "^25.0.10",
     "@types/react": "^19.2.9",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.2",
     "babel-plugin-react-compiler": "^1.0.0",
     "jsdom": "^27.4.0",
+    "oxfmt": "^0.26.0",
+    "oxlint": "^1.41.0",
     "typescript": "^5.9.3",
     "vite": "^7.3.1",
-    "vitest": "^3.2.4",
+    "vitest": "^4.0.17",
     "web-vitals": "^5.1.0"
   }
 }

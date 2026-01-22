@@ -35,9 +35,7 @@ function RouteComponent() {
         </Link>
 
         <article className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-8">
-          <h1 className="text-4xl font-bold text-white mb-4">
-            {article?.title || 'Untitled'}
-          </h1>
+          <h1 className="text-4xl font-bold text-white mb-4">{article?.title || 'Untitled'}</h1>
 
           {article?.createdAt && (
             <p className="text-sm text-cyan-400/70 mb-6">
@@ -52,20 +50,14 @@ function RouteComponent() {
 
           {article?.description && (
             <div className="mb-6">
-              <h2 className="text-xl font-semibold text-gray-300 mb-3">
-                Description
-              </h2>
-              <p className="text-gray-400 leading-relaxed">
-                {article?.description}
-              </p>
+              <h2 className="text-xl font-semibold text-gray-300 mb-3">Description</h2>
+              <p className="text-gray-400 leading-relaxed">{article?.description}</p>
             </div>
           )}
 
           {article?.content && (
             <div>
-              <h2 className="text-xl font-semibold text-gray-300 mb-3">
-                Content
-              </h2>
+              <h2 className="text-xl font-semibold text-gray-300 mb-3">Content</h2>
               <div className="text-gray-400 leading-relaxed whitespace-pre-wrap">
                 {article?.content}
               </div>
