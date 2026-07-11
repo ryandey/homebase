@@ -1,6 +1,8 @@
 {
   "name": "homebase",
+  "version": "5.0.0",
   "private": true,
+  "author": "Ryan Dey",
   "type": "module",
   "imports": {
     "#/*": "./src/*"
